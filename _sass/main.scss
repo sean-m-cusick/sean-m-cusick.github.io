@@ -1,0 +1,167 @@
+---
+---
+/* Current colour */
+.current {
+  color: green;
+}
+
+/* Base styles */
+body {
+  background-color: #141D22;
+  color: #A5FBFF;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+  background-color: #141D22;
+  color: #b4d4d6;
+  padding: 1rem;
+}
+
+/* Navigation styles */
+nav {
+  background: #141D22;
+  border-bottom: 1px solid #A5FBFF22;
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    
+    li {
+      display: inline;
+      margin-right: 10px;
+      
+      a {
+        color: #A5FBFF;
+        text-decoration: none;
+        
+        &:hover {
+          color: #A5FBFF;
+          background-color: #161f25;
+        }
+      }
+    }
+  }
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #A5FBFF;
+  }
+  
+  p {
+    color: #3a4c4e;
+  }
+
+  a {
+    color: #34A2DF;
+    
+    &:hover {
+      color: #ffb78a;
+    }
+  }
+  
+  code, pre {
+    background: #141D22;
+    color: #A5FBFF;
+    border: 1px solid #154547;
+    padding: 10px;
+  }
+}
+
+/* Sidebar styles */
+aside {
+  background: #141D22;
+  border-right: 1px solid #ff000000;
+  color: #3a4c4e;
+  
+  h2 {
+    color: #A5FBFF;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    
+    li {
+      margin: 5px 0;
+      
+      &:hover {
+        background-color: #A5FBFF11;
+      }
+      
+      &.active {
+        background-color: #cdf1f311;
+        color: #91b0b1;
+      }
+    }
+  }
+}
+
+/* Footer styles */
+footer {
+  background-color: #141D22;
+  color: #8fd8db;
+  padding: 1rem;
+  border-top: 1px solid #A5FBFF22;
+}
+
+/* Form elements */
+input[type="text"], input[type="email"], textarea {
+  background-color: #141D22;
+  color: #E1FFE5;
+  border: 1px solid #154547;
+}
+
+button {
+  background-color: #161f25;
+  color: #A5FBFF;
+  border: 1px solid #154547;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #34a3df1d;
+  border-radius: 10px;
+  
+  &:hover {
+    background: #45707274;
+  }
+}
+
+/* Semantic highlighting */
+.comment {
+  color: #3a4c4e;
+}
+
+.keyword {
+  color: #dd513c;
+}
+
+.string {
+  color: #3f9bbc;
+}
+
+.number, .type {
+  color: #4DDCFF;
+}
+
+.function, .variable {
+  color: #A5FBFF;
+}
+
+.parameter {
+  color: #92dde1;
+}
+
+.class {
+  color: #4DDCFF;
+}

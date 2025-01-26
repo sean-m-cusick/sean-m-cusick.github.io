@@ -1,0 +1,31 @@
+---
+layout: post
+author: Seàn M. Cusick
+title:  "My Journey towards Data Science"
+date:   2025-01-19 22:30:27 +0100
+categories: Welcome 
+---
+My name is Seàn and I am thrilled to share this new stage of my career with you. Following seven years within the Space sector, most recently as a business consultant, I chose in 2021 to transition my career to the domain of data science. For my entire life, my interests have always been related to art, design, coding, systems, statistics and data. After discovering a career path that marries all of these interests together, I couldn't have been more excited. 
+
+However, since making that decision, my life has been changed in several ways. Soon after completing an intensive Data Science bootcamp with 'CodeClan', Scotland's now defunct Digital Skills academy, Russia invaded Ukraine while I was present in Kharkiv with my family.  After seeking refuge in Poland, I continued acting as a Consultant, specifically for [Commercial Space Technologies Ltd](https://commercialspace.co.uk/), where I was able to implemnt some of my skills in data science for our clients, and for our partners in projects for the UK Space Agency. Nevertheless, a resumption of my transition is now underway as I continue to my work from Warsaw, Poland.
+
+
+## The Objective of this blog
+This blog will function as my personal portfolio, presenting some key data science projects I have enthusiastically developed in my free time. Within this location, you will discover several items.
+
+### Projects
+- Project 1: Interactive shiny app in R, taking meteorological data and visualising the windroses over a location for a period of time.
+- Project 2: Interactive shiny app in R, looking at hospital waiting times during COVID pandemic
+- Project 3: Dashboard for KPIs (Tableau?)
+- Project 4: GIS visualisation with use of render in R 
+- Project 5: Python Project TBD
+
+I have chosen five key projects that showcase some of my abilities. These projects will include analytical explorations using R, SQL and/or Python for statistical analysis and predictive modeling. I will explore different ways I visualize and interpret spatial data, adding a new dimension to data storytelling. Also to demonstrate understanding on how to clean and transform five complex datasets into understandable, visually appealing charts and graphs, thereby making data understandings accessible to all. I have also built at interactive data applications; these applications are designed to provide several dynamic understandings and to encourage important user interaction. Some of these projects have been based on previous work, and they will be added over the coming weeks.
+
+## My Goal
+I aim to continuously improve my skills within data science as a data analyst, and to combine them with my numerous skills I have accumulated throughout my experience as a desginer; as a project manager; in business development; in organisational development; as a language teacher; and from working in the C-suite in the space industry, the hospitality industry, and in an NGO. 
+
+All of this effort, is for me to become a highly skilled data scientist, and to make a positive impact within the world. I have always deeply aligned myself that data is a key way to make the best decisions - and my skill of taking a complex idea and breaking it down into an understandable narraitive, that is complimented with clear and aesthetically pleasing visualisation - then I can help drive decisions using data-driven understandings. 
+
+This blog will showcase my expanding skill set, as well as how I effectively apply these skills to solve practical problems. 
+

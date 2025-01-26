@@ -28,9 +28,34 @@ twitter_username: s_m_cusick
 github_username:  sean-m-cusick
 
 # Build settings
-theme: minima
+# theme: minima
+# plugins:
+#  - jekyll-feed
+
+remote_theme: pages-themes/midnight@v0.2.0
 plugins:
-  - jekyll-feed
+- jekyll-remote-theme
+- jekyll-tabs 
+
+collections:
+  authors:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:s
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
