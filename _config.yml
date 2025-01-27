@@ -47,7 +47,7 @@ defaults:
       type: "authors"
     values:
       layout: "author"
-  - scope:s
+  - scope:
       path: ""
       type: "posts"
     values:

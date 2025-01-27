@@ -1,6 +1,5 @@
 ---
-layout: post
-author: Seàn M. Cusick
+author: Seàn Matthew Cusick
 title:  "My Journey towards Data Science"
 date:   2025-01-19 22:30:27 +0100
 categories: Welcome 

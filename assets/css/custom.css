@@ -27,7 +27,7 @@
 }
 
 .tab > .active > a {
-    color:#222;
+    color: #A5FBFF; /
     border-color: #1e87f0;
 }
 
@@ -68,3 +68,51 @@
     -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
     animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #141D22; 
+    color: #A5FBFF; 
+    padding: 1rem 0;
+    border-bottom: 1px solid #154547; 
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #A5FBFF; 
+    text-decoration: none;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin-left: 1rem;
+  }
+  
+  .nav-link {
+    color: #A5FBFF; 
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease; 
+  }
+  
+  .nav-link:hover {
+    color: #ffb78a; 
+    text-decoration: underline;
+  }
+  
