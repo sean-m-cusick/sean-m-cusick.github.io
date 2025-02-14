@@ -1,8 +1,12 @@
-# Portfolio Website
+---
+title: S M Cusick's Portfolio Website
+---
 
 This is the readme for my portfolio website which can be found here at [https://sean-m-cusick.github.io/](https://sean-m-cusick.github.io/).
 
 This site serves as a showcase of my journey into **data science** and **creative coding**, highlighting my skills, projects, and interests. Hosted on GitHub Pages, this portfolio is designed to reflect my transition into a data-focused career while exploring my passion for creative and interactive coding.
+
+Due to the restrictions with Jekyll, to get control over the build environment and gemset and still use GitHubPages, the branch `gh-pages` will be used. 
 
 ---
 
