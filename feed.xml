@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://sean-m-cusick.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://sean-m-cusick.github.io//" rel="alternate" type="text/html" /><updated>2025-02-15T16:01:02+00:00</updated><id>https://sean-m-cusick.github.io//feed.xml</id><title type="html">S M Cusick’s Data Science Portfolio</title><subtitle>Seàn M. Cusick&apos;s Data Science Portfolio showcases projects in data analysis, data visualisation, and predictive modeling. Demonstrating expertise in Python, R, and SQL, Seán delivers actionable insights from complex data. &lt;hr&gt; Currently seeking Data Analyst or Business Analyst opportunities.</subtitle><entry><title type="html">Landing Page Explaination</title><link href="https://sean-m-cusick.github.io//2025/02/02/three.js.html" rel="alternate" type="text/html" title="Landing Page Explaination" /><published>2025-02-02T00:00:00+00:00</published><updated>2025-02-02T00:00:00+00:00</updated><id>https://sean-m-cusick.github.io//2025/02/02/three.js</id><content type="html" xml:base="https://sean-m-cusick.github.io//2025/02/02/three.js.html"><![CDATA[<link rel="stylesheet" href="/assets/css/monokai.css" />
+
+<iframe src="/assets/html/moon_orbit.html" width="100%" height="800px" frameborder="0" scrolling="no"></iframe>
+<hr />
+
+<h1 class="custom-heading">Three.js Exploration</h1>
+
+<p>This visualisation was one of my exploration of three.js. I decided to use it for my portfolio’s landing page.</p>
+
+<p>For this visualisation I had wanted to test an animation with some simple geometry, represents a moon orbiting a planet, due to my connection to the Space Industry, and to render it as ASCII to fit with the Console Like theme.</p>
+
+<p>The code for it can be found below:</p>
+<hr />
+
+<div class="highlight">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Moon Orbiting Planet with ASCII Effect<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"/assets/css/custom.css"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;style&gt;</span>
+    <span class="nt">body</span> <span class="p">{</span> <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span> <span class="nl">overflow</span><span class="p">:</span> <span class="nb">hidden</span><span class="p">;</span> <span class="p">}</span>
+    <span class="nt">canvas</span> <span class="p">{</span> <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span> <span class="p">}</span>
+    <span class="nf">#cameraControls</span> <span class="p">{</span>
+      <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+      <span class="nl">top</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+      <span class="nl">left</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+      <span class="nl">z-index</span><span class="p">:</span> <span class="m">100</span><span class="p">;</span>
+      <span class="nl">background</span><span class="p">:</span> <span class="n">rgba</span><span class="p">(</span><span class="m">255</span><span class="p">,</span> <span class="m">255</span><span class="p">,</span> <span class="m">255</span><span class="p">,</span> <span class="m">0.8</span><span class="p">);</span>
+      <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+      <span class="nl">border-radius</span><span class="p">:</span> <span class="m">8px</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"cameraControls"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"toggleCamera"</span><span class="nt">&gt;</span>Switch Camera<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"module"</span><span class="nt">&gt;</span>
+  <span class="k">import</span> <span class="o">*</span> <span class="k">as</span> <span class="nx">THREE</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../js/libs/three.module.js</span><span class="dl">'</span><span class="p">;</span>
+  <span class="k">import</span> <span class="p">{</span> <span class="nx">OrbitControls</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../js/libs/OrbitControls.js</span><span class="dl">'</span><span class="p">;</span>
+  <span class="k">import</span> <span class="p">{</span> <span class="nx">AsciiEffect</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../js/libs/AsciiEffect.js</span><span class="dl">'</span><span class="p">;</span>
+
+ <span class="c1">// Scene, Renderer, and Initial Camera</span>
+ <span class="kd">const</span> <span class="nx">scene</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Scene</span><span class="p">();</span>
+    <span class="kd">const</span> <span class="nx">renderer</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">WebGLRenderer</span><span class="p">();</span>
+    <span class="nx">renderer</span><span class="p">.</span><span class="nx">setSize</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">innerWidth</span><span class="p">,</span> <span class="nb">window</span><span class="p">.</span><span class="nx">innerHeight</span><span class="p">);</span>
+    <span class="nx">renderer</span><span class="p">.</span><span class="nx">setPixelRatio</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">devicePixelRatio</span><span class="p">);</span>
+
+    <span class="c1">// ASCII Effect Renderer</span>
+    <span class="kd">const</span> <span class="nx">effect</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">AsciiEffect</span><span class="p">(</span><span class="nx">renderer</span><span class="p">,</span> <span class="dl">'</span><span class="s1"> .:-=+*#%@</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span> <span class="na">invert</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> <span class="na">foreground</span><span class="p">:</span> <span class="dl">'</span><span class="s1">#A5FBFF</span><span class="dl">'</span> <span class="p">});</span>
+    <span class="nx">effect</span><span class="p">.</span><span class="nx">setSize</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">innerWidth</span><span class="p">,</span> <span class="nb">window</span><span class="p">.</span><span class="nx">innerHeight</span><span class="p">);</span>
+    <span class="nx">effect</span><span class="p">.</span><span class="nx">domElement</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="dl">'</span><span class="s1">ascii-effect</span><span class="dl">'</span><span class="p">);</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">effect</span><span class="p">.</span><span class="nx">domElement</span><span class="p">);</span>  <span class="c1">// Replace renderer.domElement with effect.domElement</span>
+
+    <span class="c1">// Perspective Camera</span>
+    <span class="kd">const</span> <span class="nx">perspectiveCamera</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">PerspectiveCamera</span><span class="p">(</span><span class="mi">75</span><span class="p">,</span> <span class="nb">window</span><span class="p">.</span><span class="nx">innerWidth</span> <span class="o">/</span> <span class="nb">window</span><span class="p">.</span><span class="nx">innerHeight</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">1000</span><span class="p">);</span>
+    <span class="nx">perspectiveCamera</span><span class="p">.</span><span class="nx">position</span><span class="p">.</span><span class="nx">z</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+
+    <span class="c1">// Orthographic Camera</span>
+    <span class="kd">const</span> <span class="nx">aspect</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">innerWidth</span> <span class="o">/</span> <span class="nb">window</span><span class="p">.</span><span class="nx">innerHeight</span><span class="p">;</span>
+    <span class="kd">const</span> <span class="nx">orthoCamera</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">OrthographicCamera</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span> <span class="o">*</span> <span class="nx">aspect</span><span class="p">,</span> <span class="mi">10</span> <span class="o">*</span> <span class="nx">aspect</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">1000</span><span class="p">);</span>
+    <span class="nx">orthoCamera</span><span class="p">.</span><span class="nx">position</span><span class="p">.</span><span class="nx">z</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+
+    <span class="c1">// Set current camera to perspective camera</span>
+    <span class="kd">let</span> <span class="nx">currentCamera</span> <span class="o">=</span> <span class="nx">perspectiveCamera</span><span class="p">;</span>
+
+    <span class="c1">// Controls for the current camera</span>
+    <span class="kd">const</span> <span class="nx">controls</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">OrbitControls</span><span class="p">(</span><span class="nx">currentCamera</span><span class="p">,</span> <span class="nx">effect</span><span class="p">.</span><span class="nx">domElement</span><span class="p">);</span>
+
+    <span class="c1">// Planet (Green)</span>
+    <span class="kd">const</span> <span class="nx">planetGeometry</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">SphereGeometry</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">32</span><span class="p">);</span>
+    <span class="kd">const</span> <span class="nx">planetMaterial</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">MeshPhongMaterial</span><span class="p">({</span> <span class="na">color</span><span class="p">:</span> <span class="mh">0x00ff00</span> <span class="p">});</span>
+    <span class="kd">const</span> <span class="nx">planet</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Mesh</span><span class="p">(</span><span class="nx">planetGeometry</span><span class="p">,</span> <span class="nx">planetMaterial</span><span class="p">);</span>
+    <span class="nx">scene</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">planet</span><span class="p">);</span>
+
+    <span class="c1">// Moon (Gray)</span>
+    <span class="kd">const</span> <span class="nx">moonGeometry</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">SphereGeometry</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">32</span><span class="p">);</span>
+    <span class="kd">const</span> <span class="nx">moonMaterial</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">MeshPhongMaterial</span><span class="p">({</span> <span class="na">color</span><span class="p">:</span> <span class="mh">0xaaaaaa</span> <span class="p">});</span>
+    <span class="kd">const</span> <span class="nx">moon</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Mesh</span><span class="p">(</span><span class="nx">moonGeometry</span><span class="p">,</span> <span class="nx">moonMaterial</span><span class="p">);</span>
+    <span class="nx">moon</span><span class="p">.</span><span class="nx">position</span><span class="p">.</span><span class="kd">set</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>  <span class="c1">// Place the moon to the side of the planet</span>
+    <span class="nx">scene</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">moon</span><span class="p">);</span>
+
+    <span class="c1">// Lighting</span>
+    <span class="kd">const</span> <span class="nx">sunLight</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">DirectionalLight</span><span class="p">(</span><span class="mh">0xffffff</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+    <span class="nx">sunLight</span><span class="p">.</span><span class="nx">position</span><span class="p">.</span><span class="kd">set</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+    <span class="nx">scene</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">sunLight</span><span class="p">);</span>
+
+    <span class="kd">const</span> <span class="nx">ambientLight</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">AmbientLight</span><span class="p">(</span><span class="mh">0x404040</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span> 
+    <span class="nx">scene</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">ambientLight</span><span class="p">);</span>
+
+    <span class="c1">// Create a Sprite with Text</span>
+    <span class="kd">const</span> <span class="nx">createTextSprite</span> <span class="o">=</span> <span class="p">(</span><span class="nx">text</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="kd">const</span> <span class="nx">canvas</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">'</span><span class="s1">canvas</span><span class="dl">'</span><span class="p">);</span>
+      <span class="kd">const</span> <span class="nx">context</span> <span class="o">=</span> <span class="nx">canvas</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="dl">'</span><span class="s1">2d</span><span class="dl">'</span><span class="p">);</span>
+      <span class="kd">const</span> <span class="nx">textureSize</span> <span class="o">=</span> <span class="mi">512</span><span class="p">;</span>
+
+      <span class="c1">// Set canvas size</span>
+      <span class="nx">canvas</span><span class="p">.</span><span class="nx">width</span> <span class="o">=</span> <span class="nx">textureSize</span><span class="p">;</span>
+      <span class="nx">canvas</span><span class="p">.</span><span class="nx">height</span> <span class="o">=</span> <span class="nx">textureSize</span><span class="p">;</span>
+
+      <span class="c1">// Draw text on the canvas</span>
+      <span class="nx">context</span><span class="p">.</span><span class="nx">font</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">96px Impact</span><span class="dl">'</span><span class="p">;</span>
+      <span class="nx">context</span><span class="p">.</span><span class="nx">fillStyle</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">white</span><span class="dl">'</span><span class="p">;</span>
+      <span class="nx">context</span><span class="p">.</span><span class="nx">textAlign</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">center</span><span class="dl">'</span><span class="p">;</span>
+      <span class="nx">context</span><span class="p">.</span><span class="nx">textBaseline</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">middle</span><span class="dl">'</span><span class="p">;</span>
+      <span class="kd">const</span> <span class="nx">padding</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
+      <span class="nx">context</span><span class="p">.</span><span class="nx">fillText</span><span class="p">(</span><span class="nx">text</span><span class="p">,</span> <span class="nx">textureSize</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="nx">textureSize</span> <span class="o">/</span> <span class="mi">2</span><span class="p">);</span>
+
+      <span class="c1">// Create a texture from the canvas</span>
+      <span class="kd">const</span> <span class="nx">texture</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">CanvasTexture</span><span class="p">(</span><span class="nx">canvas</span><span class="p">);</span>
+
+      <span class="c1">// Create a SpriteMaterial with the texture</span>
+      <span class="kd">const</span> <span class="nx">spriteMaterial</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">SpriteMaterial</span><span class="p">({</span> <span class="na">map</span><span class="p">:</span> <span class="nx">texture</span> <span class="p">});</span>
+
+      <span class="c1">// Create a Sprite</span>
+      <span class="kd">const</span> <span class="nx">sprite</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Sprite</span><span class="p">(</span><span class="nx">spriteMaterial</span><span class="p">);</span>
+      <span class="nx">sprite</span><span class="p">.</span><span class="nx">scale</span><span class="p">.</span><span class="kd">set</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span> 
+      <span class="nx">sprite</span><span class="p">.</span><span class="nx">position</span><span class="p">.</span><span class="kd">set</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span> 
+
+      <span class="k">return</span> <span class="nx">sprite</span><span class="p">;</span>
+    <span class="p">};</span>
+
+    <span class="c1">// Add the text sprite to the scene</span>
+    <span class="kd">const</span> <span class="nx">textSprite</span> <span class="o">=</span> <span class="nx">createTextSprite</span><span class="p">(</span><span class="dl">'</span><span class="s1">PORTFOLIO</span><span class="dl">'</span><span class="p">);</span>
+    <span class="nx">scene</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">textSprite</span><span class="p">);</span>
+
+    <span class="c1">// Animation Loop</span>
+    <span class="kd">function</span> <span class="nx">animate</span><span class="p">()</span> <span class="p">{</span>
+      <span class="nx">requestAnimationFrame</span><span class="p">(</span><span class="nx">animate</span><span class="p">);</span>
+
+      <span class="c1">// Moon Orbit</span>
+      <span class="kd">const</span> <span class="nx">time</span> <span class="o">=</span> <span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">()</span> <span class="o">*</span> <span class="mf">0.001</span><span class="p">;</span>
+      <span class="nx">moon</span><span class="p">.</span><span class="nx">position</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">cos</span><span class="p">(</span><span class="nx">time</span><span class="p">)</span> <span class="o">*</span> <span class="mi">15</span><span class="p">;</span> <span class="c1">// Horizontal motion</span>
+      <span class="nx">moon</span><span class="p">.</span><span class="nx">position</span><span class="p">.</span><span class="nx">y</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">sin</span><span class="p">(</span><span class="nx">time</span> <span class="o">*</span> <span class="mf">1.5</span><span class="p">)</span> <span class="o">*</span> <span class="mi">5</span><span class="p">;</span> <span class="c1">// Vertical motion (adjust multiplier for more/less tilt)</span>
+      <span class="nx">moon</span><span class="p">.</span><span class="nx">position</span><span class="p">.</span><span class="nx">z</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">sin</span><span class="p">(</span><span class="nx">time</span><span class="p">)</span> <span class="o">*</span> <span class="mi">15</span><span class="p">;</span> <span class="c1">// Depth motion</span>
+
+      <span class="c1">// Render with ASCII Effect</span>
+      <span class="nx">effect</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="nx">scene</span><span class="p">,</span> <span class="nx">currentCamera</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Toggle between Perspective and Orthographic Cameras</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">toggleCamera</span><span class="dl">'</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="nx">currentCamera</span> <span class="o">=</span> <span class="p">(</span><span class="nx">currentCamera</span> <span class="o">===</span> <span class="nx">perspectiveCamera</span><span class="p">)</span> <span class="p">?</span> <span class="nx">orthoCamera</span> <span class="p">:</span> <span class="nx">perspectiveCamera</span><span class="p">;</span>
+      <span class="nx">controls</span><span class="p">.</span><span class="nx">object</span> <span class="o">=</span> <span class="nx">currentCamera</span><span class="p">;</span>
+      <span class="nx">controls</span><span class="p">.</span><span class="nx">update</span><span class="p">();</span>
+    <span class="p">});</span>
+
+    <span class="c1">// Handle Window Resize</span>
+    <span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">resize</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="kd">const</span> <span class="nx">aspect</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">innerWidth</span> <span class="o">/</span> <span class="nb">window</span><span class="p">.</span><span class="nx">innerHeight</span><span class="p">;</span>
+
+      <span class="c1">// Update Perspective Camera</span>
+      <span class="nx">perspectiveCamera</span><span class="p">.</span><span class="nx">aspect</span> <span class="o">=</span> <span class="nx">aspect</span><span class="p">;</span>
+      <span class="nx">perspectiveCamera</span><span class="p">.</span><span class="nx">updateProjectionMatrix</span><span class="p">();</span>
+
+      <span class="c1">// Update Orthographic Camera</span>
+      <span class="nx">orthoCamera</span><span class="p">.</span><span class="nx">left</span> <span class="o">=</span> <span class="o">-</span><span class="mi">10</span> <span class="o">*</span> <span class="nx">aspect</span><span class="p">;</span>
+      <span class="nx">orthoCamera</span><span class="p">.</span><span class="nx">right</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">*</span> <span class="nx">aspect</span><span class="p">;</span>
+      <span class="nx">orthoCamera</span><span class="p">.</span><span class="nx">top</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+      <span class="nx">orthoCamera</span><span class="p">.</span><span class="nx">bottom</span> <span class="o">=</span> <span class="o">-</span><span class="mi">10</span><span class="p">;</span>
+      <span class="nx">orthoCamera</span><span class="p">.</span><span class="nx">updateProjectionMatrix</span><span class="p">();</span>
+
+      <span class="c1">// Update Renderer and ASCII Effect</span>
+      <span class="nx">renderer</span><span class="p">.</span><span class="nx">setSize</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">innerWidth</span><span class="p">,</span> <span class="nb">window</span><span class="p">.</span><span class="nx">innerHeight</span><span class="p">);</span>
+      <span class="nx">effect</span><span class="p">.</span><span class="nx">setSize</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">innerWidth</span><span class="p">,</span> <span class="nb">window</span><span class="p">.</span><span class="nx">innerHeight</span><span class="p">);</span>
+    <span class="p">});</span>
+
+    <span class="nx">animate</span><span class="p">();</span>
+  <span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></figure>
+
+</div>
+<hr />]]></content><author><name></name></author><summary type="html"><![CDATA[Three.js Exploration]]></summary></entry><entry><title type="html">My Journey towards Data Science</title><link href="https://sean-m-cusick.github.io//welcome/2025/01/19/welcome.html" rel="alternate" type="text/html" title="My Journey towards Data Science" /><published>2025-01-19T21:30:27+00:00</published><updated>2025-01-19T21:30:27+00:00</updated><id>https://sean-m-cusick.github.io//welcome/2025/01/19/welcome</id><content type="html" xml:base="https://sean-m-cusick.github.io//welcome/2025/01/19/welcome.html"><![CDATA[<p>My name is Seàn and I am thrilled to share this new stage of my career with you. Following seven years within the Space sector, most recently as a business consultant, I chose in 2021 to transition my career to the domain of data science. For my entire life, my interests have always been related to art, design, coding, systems, statistics and data. After discovering a career path that marries all of these interests together, I couldn’t have been more excited.</p>
+
+<p>However, since making that decision, my life has been changed in several ways. Soon after completing an intensive Data Science bootcamp with ‘CodeClan’, Scotland’s now defunct Digital Skills academy, Russia invaded Ukraine while I was present in Kharkiv with my family.  After seeking refuge in Poland, I continued acting as a Consultant, specifically for <a href="https://commercialspace.co.uk/">Commercial Space Technologies Ltd</a>, where I was able to implemnt some of my skills in data science for our clients, and for our partners in projects for the UK Space Agency. Nevertheless, a resumption of my transition is now underway as I continue to my work from Warsaw, Poland.</p>
+
+<h2 id="the-objective-of-this-blog">The Objective of this blog</h2>
+<p>This blog will function as my personal portfolio, presenting some key data science projects I have enthusiastically developed in my free time. Within this location, you will discover several items.</p>
+
+<h3 id="projects">Projects</h3>
+<ul>
+  <li>Project 1: Interactive shiny app in R, taking meteorological data and visualising the windroses over a location for a period of time.</li>
+  <li>Project 2: Interactive shiny app in R, looking at hospital waiting times during COVID pandemic</li>
+  <li>Project 3: Dashboard for KPIs (Tableau?)</li>
+  <li>Project 4: GIS visualisation with use of render in R</li>
+  <li>Project 5: Python Project TBD</li>
+</ul>
+
+<p>I have chosen five key projects that showcase some of my abilities. These projects will include analytical explorations using R, SQL and/or Python for statistical analysis and predictive modeling. I will explore different ways I visualize and interpret spatial data, adding a new dimension to data storytelling. Also to demonstrate understanding on how to clean and transform five complex datasets into understandable, visually appealing charts and graphs, thereby making data understandings accessible to all. I have also built at interactive data applications; these applications are designed to provide several dynamic understandings and to encourage important user interaction. Some of these projects have been based on previous work, and they will be added over the coming weeks.</p>
+
+<h2 id="my-goal">My Goal</h2>
+<p>I aim to continuously improve my skills within data science as a data analyst, and to combine them with my numerous skills I have accumulated throughout my experience as a desginer; as a project manager; in business development; in organisational development; as a language teacher; and from working in the C-suite in the space industry, the hospitality industry, and in an NGO.</p>
+
+<p>All of this effort, is for me to become a highly skilled data scientist, and to make a positive impact within the world. I have always deeply aligned myself that data is a key way to make the best decisions - and my skill of taking a complex idea and breaking it down into an understandable narraitive, that is complimented with clear and aesthetically pleasing visualisation - then I can help drive decisions using data-driven understandings.</p>
+
+<p>This blog will showcase my expanding skill set, as well as how I effectively apply these skills to solve practical problems.</p>]]></content><author><name>Seàn Matthew Cusick</name></author><category term="Welcome" /><summary type="html"><![CDATA[My name is Seàn and I am thrilled to share this new stage of my career with you. Following seven years within the Space sector, most recently as a business consultant, I chose in 2021 to transition my career to the domain of data science. For my entire life, my interests have always been related to art, design, coding, systems, statistics and data. After discovering a career path that marries all of these interests together, I couldn’t have been more excited.]]></summary></entry><entry><title type="html">Project 1</title><link href="https://sean-m-cusick.github.io//projects/2025/01/19/project1.html" rel="alternate" type="text/html" title="Project 1" /><published>2025-01-19T21:30:27+00:00</published><updated>2025-01-19T21:30:27+00:00</updated><id>https://sean-m-cusick.github.io//projects/2025/01/19/project1</id><content type="html" xml:base="https://sean-m-cusick.github.io//projects/2025/01/19/project1.html"><![CDATA[<h3 id="project">Project</h3>
+<ul>
+  <li>Project 1: Interactive shiny app in R, taking meteorological data and visualising the windroses over a location for a period of time.</li>
+</ul>]]></content><author><name>Seàn Matthew Cusick</name></author><category term="Projects" /><summary type="html"><![CDATA[Project Project 1: Interactive shiny app in R, taking meteorological data and visualising the windroses over a location for a period of time.]]></summary></entry></feed>

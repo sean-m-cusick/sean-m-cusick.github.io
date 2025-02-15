@@ -1,9 +1,0 @@
----
-author: Seàn Matthew Cusick
-title:  "Project 1"
-date:   2025-01-19 22:30:27 +0100
-categories: Projects 
----
-
-### Project
-- Project 1: Interactive shiny app in R, taking meteorological data and visualising the windroses over a location for a period of time.

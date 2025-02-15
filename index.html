@@ -1,4 +1,91 @@
----
-layout: default
-title: Landing Page - Three.js Visualization
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S M Cusick's Portfolio - Landing Page</title>
+  <link rel="stylesheet" href="/assets/css/custom.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+</head>
+<body style="margin: 0; padding: 0; overflow: hidden;">
+  <nav class="navbar">
+  <div class="navbar-container">
+    <a href="/" class="navbar-brand">S M Cusick's Data Science Portfolio</a>
+    <button class="navbar-toggle" aria-label="Toggle navigation" id="navbar-toggle">
+      <span class="navbar-toggle-icon">&#9776;</span>
+    </button>
+    <ul class="navbar-nav" id="navbar-menu">
+      <li class="nav-item"><a href="/" class="nav-link">HOME</a></li>
+      <li class="nav-item"><a href="/about" class="nav-link">ABOUT</a></li>
+      <li class="nav-item"><a href="/project_portfolio" class="nav-link">PORTFOLIO</a></li>
+      <li class="nav-item"><a href="/blog" class="nav-link">BLOG</a></li>
+      <li class="nav-item fork"><a href="https://github.com/sean-m-cusick/sean-m-cusick.github.io">View On GitHub</a></li>
+      
+    </ul>
+  </div>
+</nav>
+<!--
+<nav>
+    
+      <a href="/" class="current">HOME</a>
+    
+      <a href="/about/">ABOUT</a>
+    
+      <a href="/project_portfolio.html">PORTFOLIO</a>
+    
+      <a href="/blog.html">BLOG</a>
+    
+  </nav>
+  <-->
+
+  <!-- Render content of the page without layout constraints -->
+  <style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .container, .page-content, iframe {
+    width: 100vw !important;
+    height: 100vh !important;
+    max-width: 100vw !important;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  iframe {
+    border: none;
+  }
+</style>
+
+<div style="position: relative; width: 100vw; height: 100vh; overflow: hidden;">
+    <a href="/2025/02/02/three.js.html" style="text-decoration: none;">
+        <button style="
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.8);
+            border: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            background: #4CAF50;
+            color: white;
+        ">
+            &gt;&gt;Show Code &amp; Details&lt;&lt;
+        </button>
+    </a>
+    <iframe src="/assets/html/moon_orbit.html" style="width: 100vw; height: 100vh; border: none;"></iframe>
+</div>
+
+
+</body>
+</html>
