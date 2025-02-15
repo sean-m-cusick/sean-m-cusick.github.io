@@ -3,7 +3,7 @@ name: Deploy Jekyll site to GitHub Pages
 on:
   push:
     branches:
-      - gh-pages # Change this to your default branch (e.g., main or master)
+      - main # Change this to your default branch (e.g., main or master)
 
 jobs:
   deploy:
