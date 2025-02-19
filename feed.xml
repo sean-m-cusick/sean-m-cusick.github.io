@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://sean-m-cusick.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://sean-m-cusick.github.io//" rel="alternate" type="text/html" /><updated>2025-02-15T16:01:02+00:00</updated><id>https://sean-m-cusick.github.io//feed.xml</id><title type="html">S M Cusick’s Data Science Portfolio</title><subtitle>Seàn M. Cusick&apos;s Data Science Portfolio showcases projects in data analysis, data visualisation, and predictive modeling. Demonstrating expertise in Python, R, and SQL, Seán delivers actionable insights from complex data. &lt;hr&gt; Currently seeking Data Analyst or Business Analyst opportunities.</subtitle><entry><title type="html">Landing Page Explaination</title><link href="https://sean-m-cusick.github.io//2025/02/02/three.js.html" rel="alternate" type="text/html" title="Landing Page Explaination" /><published>2025-02-02T00:00:00+00:00</published><updated>2025-02-02T00:00:00+00:00</updated><id>https://sean-m-cusick.github.io//2025/02/02/three.js</id><content type="html" xml:base="https://sean-m-cusick.github.io//2025/02/02/three.js.html"><![CDATA[<link rel="stylesheet" href="/assets/css/monokai.css" />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://sean-m-cusick.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://sean-m-cusick.github.io//" rel="alternate" type="text/html" /><updated>2025-02-19T13:33:48+00:00</updated><id>https://sean-m-cusick.github.io//feed.xml</id><title type="html">S M Cusick’s Data Science Portfolio</title><subtitle>Seàn M. Cusick&apos;s Data Science Portfolio showcases projects in data analysis, data visualisation, and predictive modeling. Demonstrating expertise in Python, R, and SQL, Seán delivers actionable insights from complex data. &lt;hr&gt; Currently seeking Data Analyst or Business Analyst opportunities.</subtitle><entry><title type="html">Landing Page Explaination</title><link href="https://sean-m-cusick.github.io//2025/02/02/three.js.html" rel="alternate" type="text/html" title="Landing Page Explaination" /><published>2025-02-02T00:00:00+00:00</published><updated>2025-02-02T00:00:00+00:00</updated><id>https://sean-m-cusick.github.io//2025/02/02/three.js</id><content type="html" xml:base="https://sean-m-cusick.github.io//2025/02/02/three.js.html"><![CDATA[<link rel="stylesheet" href="/assets/css/monokai.css" />
 
 <iframe src="/assets/html/moon_orbit.html" width="100%" height="800px" frameborder="0" scrolling="no"></iframe>
 <hr />
@@ -199,7 +199,129 @@
 
 <p>All of this effort, is for me to become a highly skilled data scientist, and to make a positive impact within the world. I have always deeply aligned myself that data is a key way to make the best decisions - and my skill of taking a complex idea and breaking it down into an understandable narraitive, that is complimented with clear and aesthetically pleasing visualisation - then I can help drive decisions using data-driven understandings.</p>
 
-<p>This blog will showcase my expanding skill set, as well as how I effectively apply these skills to solve practical problems.</p>]]></content><author><name>Seàn Matthew Cusick</name></author><category term="Welcome" /><summary type="html"><![CDATA[My name is Seàn and I am thrilled to share this new stage of my career with you. Following seven years within the Space sector, most recently as a business consultant, I chose in 2021 to transition my career to the domain of data science. For my entire life, my interests have always been related to art, design, coding, systems, statistics and data. After discovering a career path that marries all of these interests together, I couldn’t have been more excited.]]></summary></entry><entry><title type="html">Project 1</title><link href="https://sean-m-cusick.github.io//projects/2025/01/19/project1.html" rel="alternate" type="text/html" title="Project 1" /><published>2025-01-19T21:30:27+00:00</published><updated>2025-01-19T21:30:27+00:00</updated><id>https://sean-m-cusick.github.io//projects/2025/01/19/project1</id><content type="html" xml:base="https://sean-m-cusick.github.io//projects/2025/01/19/project1.html"><![CDATA[<h3 id="project">Project</h3>
+<p>This blog will showcase my expanding skill set, as well as how I effectively apply these skills to solve practical problems.</p>]]></content><author><name>Seàn Matthew Cusick</name></author><category term="Welcome" /><summary type="html"><![CDATA[My name is Seàn and I am thrilled to share this new stage of my career with you. Following seven years within the Space sector, most recently as a business consultant, I chose in 2021 to transition my career to the domain of data science. For my entire life, my interests have always been related to art, design, coding, systems, statistics and data. After discovering a career path that marries all of these interests together, I couldn’t have been more excited.]]></summary></entry><entry><title type="html">Windrose Analysis for Launch Sites in Scotland</title><link href="https://sean-m-cusick.github.io//projects/2025/01/19/project1.html" rel="alternate" type="text/html" title="Windrose Analysis for Launch Sites in Scotland" /><published>2025-01-19T21:30:27+00:00</published><updated>2025-01-19T21:30:27+00:00</updated><id>https://sean-m-cusick.github.io//projects/2025/01/19/project1</id><content type="html" xml:base="https://sean-m-cusick.github.io//projects/2025/01/19/project1.html"><![CDATA[<h3 id="windrose-analysis-for-launch-sites-in-scotland">Windrose Analysis for Launch Sites in Scotland</h3>
+
+<p><em>This app is a personal project and is not related to any work done for clients. It was inspired by a client’s request to assess wind conditions in Scotland for rocket launch site suitability. The app uses real wind data from the MetOffice but is not affiliated with any client or organization.</em></p>
+
+<p><img src="\assets\images\project_1.png" alt="Project Screenshot" /></p>
+
+<h2 id="purpose-of-the-app">Purpose of the App</h2>
+
+<p>The objective of this Shiny app is to help users analyse wind patterns across different locations in Scotland to identify areas with the most favourable wind conditions for launching rockets. The app visualizes wind direction and speed using windrose plots, allowing users to explore wind patterns.</p>
+
+<h3 id="key-features">Key Features:</h3>
 <ul>
-  <li>Project 1: Interactive shiny app in R, taking meteorological data and visualising the windroses over a location for a period of time.</li>
-</ul>]]></content><author><name>Seàn Matthew Cusick</name></author><category term="Projects" /><summary type="html"><![CDATA[Project Project 1: Interactive shiny app in R, taking meteorological data and visualising the windroses over a location for a period of time.]]></summary></entry></feed>
+  <li><strong>Interactive Map</strong>: Users can select a location in Scotland (including major cities and island settlements) to view wind data.</li>
+  <li><strong>Windrose Plots</strong>: Visualize wind direction and speed for the selected location.</li>
+  <li><strong>Colorblind-Friendly Design</strong>: The windrose uses a custom color palette for better accessibility.</li>
+</ul>
+
+<h2 id="how-to-use-the-app">How to Use the App</h2>
+
+<ol>
+  <li><strong>Select a Location</strong>:
+    <ul>
+      <li>Use the dropdown menu to choose a location in Scotland.</li>
+      <li>The map will update to show the selected location with a transparent circle representing the surrounding area.</li>
+    </ul>
+  </li>
+  <li><strong>Interpret the Windrose</strong>:
+    <ul>
+      <li>The windrose shows the distribution of wind speed and direction:
+        <ul>
+          <li><strong>Direction</strong>: The bars indicate where the wind is coming from (e.g., North, South, East, West).</li>
+          <li><strong>Length</strong>: The length of the bars represents how often the wind blows from that direction.</li>
+          <li><strong>Colour</strong>: The colour indicates wind speed, with darker colours representing stronger winds.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="challenges">Challenges</h2>
+
+<ol>
+  <li><strong>API</strong>:
+    <ul>
+      <li>Navigating the MetOffice’s DataHub API to find the exact data required took some trial and error.</li>
+      <li>Originally planned to take a year’s data and create seasonal and yearly averages to display which time of the year would be most favourable for a launch.</li>
+    </ul>
+  </li>
+  <li><strong>Data Processing</strong>:
+    <ul>
+      <li>Combining and filtering wind direction and speed data to create a single dataset for analysis.</li>
+      <li>Finding the closest match for coordinates to ensure accurate location data.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="ethical-considerations">Ethical Considerations</h2>
+
+<p>This app is a personal project and does not use confidential or proprietary client data. The wind data is sourced from the MetOffice and is used for demonstration purposes only. The app is designed to be a tool for exploring wind patterns and is not intended for actual rocket launch planning.</p>
+
+<h2 id="technical-details">Technical Details</h2>
+
+<h3 id="data-simulation">Data Simulation</h3>
+<ul>
+  <li>Wind data (speed and direction) is taken from MetOffice’s DataHub.</li>
+</ul>
+
+<h3 id="libraries-used">Libraries Used</h3>
+<ul>
+  <li><strong>Shiny</strong>: For building the interactive web app.</li>
+  <li><strong>Leaflet</strong>: For displaying the interactive map.</li>
+  <li><strong>OpenAir</strong>: For generating windrose plots.</li>
+  <li><strong>Readr</strong>: For reading CSV files.</li>
+  <li><strong>Dplyr</strong>: For data manipulation.</li>
+  <li><strong>Httr</strong>: For HTTP requests.</li>
+  <li><strong>Jsonlite</strong>: For JSON parsing.</li>
+  <li><strong>Fs</strong>: For file system operations.</li>
+  <li><strong>Geosphere</strong>: For geospatial calculations.</li>
+</ul>
+
+<h2 id="future-improvements">Future Improvements</h2>
+
+<ol>
+  <li><strong>Additional Weather Metrics</strong>:
+    <ul>
+      <li>Include options to analyse <strong>wind height</strong> and <strong>atmospheric pressure</strong> for more comprehensive weather assessment.</li>
+    </ul>
+  </li>
+  <li><strong>Specific Date Selection</strong>:
+    <ul>
+      <li>Allow users to select a specific date or date range instead of viewing averages.</li>
+    </ul>
+  </li>
+  <li><strong>Real-Time Data Integration</strong>:
+    <ul>
+      <li>Integrate real-time weather data for up-to-date analysis.</li>
+    </ul>
+  </li>
+  <li><strong>Enhanced UI</strong>:
+    <ul>
+      <li>Add more interactive elements, such as tooltips and animations.</li>
+      <li>Include a tutorial or guide for first-time users.</li>
+    </ul>
+  </li>
+  <li><strong>Advanced Analysis</strong>:
+    <ul>
+      <li>Add statistical summaries (e.g., average wind speed, dominant wind direction).</li>
+      <li>Include historical wind data for trend analysis.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="license">License</h2>
+
+<p>This project is licensed under the MIT License. Feel free to use, modify, and distribute the code as needed.</p>
+
+<h2 id="acknowledgments">Acknowledgments</h2>
+
+<ul>
+  <li>Inspired by a client’s request for wind analysis in Scotland.</li>
+  <li><strong>MetOffice</strong>: For providing the wind data used in this app.</li>
+  <li><strong>Commercial Space Technologies</strong>: For inspiring the concept of assessing wind conditions for rocket launch sites. Learn more at <a href="https://commercialspace.co.uk/">commercialspace.co.uk</a>.</li>
+  <li>The R community for open-source libraries like <code class="language-plaintext highlighter-rouge">leaflet</code> and <code class="language-plaintext highlighter-rouge">openair</code>.</li>
+  <li>Built using R and the Shiny framework.</li>
+  <li>Special thanks to the R community for open-source libraries like <code class="language-plaintext highlighter-rouge">leaflet</code> and <code class="language-plaintext highlighter-rouge">openair</code>.</li>
+</ul>]]></content><author><name>Seàn Matthew Cusick</name></author><category term="Projects" /><summary type="html"><![CDATA[Windrose Analysis for Launch Sites in Scotland]]></summary></entry></feed>
