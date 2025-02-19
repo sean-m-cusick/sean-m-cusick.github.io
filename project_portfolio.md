@@ -13,6 +13,7 @@ Click Each tab to see the featured projects, and follow the link at the top for 
   
   {% tab projects project1 %}
   [>>Project 1<<](./_posts/2025-01-24-project1.markdown)
+  ![Project Screenshot](\assets\images\project_1.png)
   **Interactive Shiny App in R**: Visualising **meteorological data** through windroses for specific locations and time periods.
   
   - Developed using **Shiny** for dynamic data visualisation.

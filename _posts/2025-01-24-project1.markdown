@@ -1,9 +1,96 @@
 ---
 author: Seàn Matthew Cusick
-title:  "Project 1"
+title:  "Windrose Analysis for Launch Sites in Scotland"
 date:   2025-01-19 22:30:27 +0100
 categories: Projects 
 ---
 
-### Project
-- Project 1: Interactive shiny app in R, taking meteorological data and visualising the windroses over a location for a period of time.
+### Windrose Analysis for Launch Sites in Scotland
+
+*This app is a personal project and is not related to any work done for clients. It was inspired by a client's request to assess wind conditions in Scotland for rocket launch site suitability. The app uses real wind data from the MetOffice but is not affiliated with any client or organization.*
+
+![Project Screenshot](\assets\images\project_1.png)
+
+## Purpose of the App
+
+The objective of this Shiny app is to help users analyse wind patterns across different locations in Scotland to identify areas with the most favourable wind conditions for launching rockets. The app visualizes wind direction and speed using windrose plots, allowing users to explore wind patterns.
+
+### Key Features:
+- **Interactive Map**: Users can select a location in Scotland (including major cities and island settlements) to view wind data.
+- **Windrose Plots**: Visualize wind direction and speed for the selected location.
+- **Colorblind-Friendly Design**: The windrose uses a custom color palette for better accessibility.
+
+## How to Use the App
+
+1. **Select a Location**:
+   - Use the dropdown menu to choose a location in Scotland.
+   - The map will update to show the selected location with a transparent circle representing the surrounding area.
+
+2. **Interpret the Windrose**:
+   - The windrose shows the distribution of wind speed and direction:
+     - **Direction**: The bars indicate where the wind is coming from (e.g., North, South, East, West).
+     - **Length**: The length of the bars represents how often the wind blows from that direction.
+     - **Colour**: The colour indicates wind speed, with darker colours representing stronger winds.
+
+## Challenges
+
+1. **API**:
+   - Navigating the MetOffice's DataHub API to find the exact data required took some trial and error.
+   - Originally planned to take a year's data and create seasonal and yearly averages to display which time of the year would be most favourable for a launch.
+
+2. **Data Processing**:
+   - Combining and filtering wind direction and speed data to create a single dataset for analysis.
+   - Finding the closest match for coordinates to ensure accurate location data.
+
+## Ethical Considerations
+
+This app is a personal project and does not use confidential or proprietary client data. The wind data is sourced from the MetOffice and is used for demonstration purposes only. The app is designed to be a tool for exploring wind patterns and is not intended for actual rocket launch planning.
+
+## Technical Details
+
+### Data Simulation
+- Wind data (speed and direction) is taken from MetOffice's DataHub.
+
+### Libraries Used
+- **Shiny**: For building the interactive web app.
+- **Leaflet**: For displaying the interactive map.
+- **OpenAir**: For generating windrose plots.
+- **Readr**: For reading CSV files.
+- **Dplyr**: For data manipulation.
+- **Httr**: For HTTP requests.
+- **Jsonlite**: For JSON parsing.
+- **Fs**: For file system operations.
+- **Geosphere**: For geospatial calculations.
+
+## Future Improvements
+
+1. **Additional Weather Metrics**:
+   - Include options to analyse **wind height** and **atmospheric pressure** for more comprehensive weather assessment.
+
+2. **Specific Date Selection**:
+   - Allow users to select a specific date or date range instead of viewing averages.
+
+3. **Real-Time Data Integration**:
+   - Integrate real-time weather data for up-to-date analysis.
+
+4. **Enhanced UI**:
+   - Add more interactive elements, such as tooltips and animations.
+   - Include a tutorial or guide for first-time users.
+
+5. **Advanced Analysis**:
+   - Add statistical summaries (e.g., average wind speed, dominant wind direction).
+   - Include historical wind data for trend analysis.
+
+
+## License
+
+This project is licensed under the MIT License. Feel free to use, modify, and distribute the code as needed.
+
+## Acknowledgments
+
+- Inspired by a client's request for wind analysis in Scotland.
+- **MetOffice**: For providing the wind data used in this app.
+- **Commercial Space Technologies**: For inspiring the concept of assessing wind conditions for rocket launch sites. Learn more at [commercialspace.co.uk](https://commercialspace.co.uk/).
+- The R community for open-source libraries like `leaflet` and `openair`.
+- Built using R and the Shiny framework.
+- Special thanks to the R community for open-source libraries like `leaflet` and `openair`.
