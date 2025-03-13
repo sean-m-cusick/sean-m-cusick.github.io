@@ -26,8 +26,8 @@ Click Each tab to see the featured projects, and follow the link at the top for 
   
   {% tab projects project2 %}
   [>>Project 2<<](./_posts/2025-02-10-project2.markdown)
-  _THIS_PAGE_IS_UNDER_CONSTRUCTION_
-  **Interactive Shiny App in R**: Analysing **infection rates and deaths** during the COVID-19 pandemic.
+  -   _THIS_PAGE_IS_UNDER_CONSTRUCTION_
+  - **Interactive Shiny App in R**: Analysing **infection rates and deaths** during the COVID-19 pandemic.
   
 - **Interactive Map**: Users can select a region in Scotland to view COVID-19 data.
 - **Time Series Plots**: Visualize trends in infection rates and deaths over time.
@@ -39,8 +39,8 @@ Click Each tab to see the featured projects, and follow the link at the top for 
   
   {% tab projects project3 %}
   [>>Project 3<<](./_posts/2025-02-28-project3.markdown)
-  _THIS_PAGE_IS_UNDER_CONSTRUCTION_
-  **KPI Dashboard**: Developed using **Tableau** to track and present key performance indicators for business operations.  
+  -  _THIS_PAGE_IS_UNDER_CONSTRUCTION_
+  -   **KPI Dashboard**: Developed using **Tableau** to track and present key performance indicators for business operations.  
 
   - Features **interactive visualisations**, **custom filters**, and **drill-down capabilities**.  
   - Designed to monitor metrics such as revenue, customer satisfaction, and sales performance, using **simulated data** created in R.  
@@ -50,8 +50,8 @@ Click Each tab to see the featured projects, and follow the link at the top for 
   
   {% tab projects project4 %}
   [>>Project 4<<](./_posts/2025-03-13-project4.markdown)
-  _THIS_PAGE_IS_UNDER_CONSTRUCTION_
-  **GIS Visualisation**: Leveraging **R's geospatial packages** to analyse and visualise deforestation trends in Poland using the **Global Forest Change (GFC) 2000-2023 dataset**.  
+  -   _THIS_PAGE_IS_UNDER_CONSTRUCTION_
+  -   **GIS Visualisation**: Leveraging **R's geospatial packages** to analyse and visualise deforestation trends in Poland using the **Global Forest Change (GFC) 2000-2023 dataset**.  
 
   - Features **3d map**, **time series analysis**, and **forest loss/gain visualisations**.  
   - Designed to raise awareness about deforestation and its environmental impact, inspired by the work of **Simona Kossak** and **Milos Popovic**.  
@@ -61,8 +61,8 @@ Click Each tab to see the featured projects, and follow the link at the top for 
   
   {% tab projects project5 %}
   [>>Project 5<<](./_posts/2025-03-13-project5.markdown)
-  _THIS_PAGE_IS_UNDER_CONSTRUCTION_
-  **Stock Market Analysis and Prediction**: Leveraging **Python's data science libraries** to analyze historical stock data and predict future prices.  
+  -   _THIS_PAGE_IS_UNDER_CONSTRUCTION_
+  -   **Stock Market Analysis and Prediction**: Leveraging **Python's data science libraries** to analyze historical stock data and predict future prices.  
 
 - Features **data fetching**, **trend visualization**, and **predictive modeling** using machine learning.  
 - Designed to provide actionable insights for investors, using publicly available stock data from `yfinance`.  
