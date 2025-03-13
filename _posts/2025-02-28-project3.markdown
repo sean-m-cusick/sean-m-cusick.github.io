@@ -1,0 +1,94 @@
+---
+author: Seàn Matthew Cusick
+title:  "KPI Dashboard: Tracking Business Performance"
+date:   2025-02-28 22:30:27 +0100
+categories: Projects 
+---
+
+# _THIS_PAGE_IS_UNDER_CONSTRUCTION_
+
+### Interactive Tableau Dashboard: KPI Tracking
+
+*This project is a personal initiative to create a dashboard for tracking key performance indicators (KPIs) in business operations. The dashboard visualizes critical metrics such as revenue, customer satisfaction, and operational performance, providing insights for decision-making. The data used in this project was simulated using R to mimic real-world business scenarios.*
+
+
+## Purpose of the Dashboard
+
+The objective of this Tableau dashboard is to help businesses monitor and analyze their performance through key metrics. By visualizing KPIs in an interactive and user-friendly format, the dashboard enables stakeholders to identify trends, spot issues, and make data-driven decisions.
+
+### Key Features:
+- **Interactive Visualizations**: Bar charts, line graphs, and pie charts to represent KPIs.
+- **Custom Filters**: Filter data by date range, region, or product category.
+- **Simulated Data**: Realistic business performance data generated using R.
+- **Drill-Down Capability**: Explore detailed metrics by clicking on summary visualizations.
+
+## How to Use the Dashboard
+
+1. **Select a Metric**:
+   - Use the dropdown menu or interactive filters to choose a KPI (e.g., revenue, customer satisfaction).
+   - The dashboard will update to display the selected metric.
+
+2. **Explore Trends**:
+   - The line graphs show trends over time (e.g., monthly revenue, quarterly customer satisfaction scores).
+   - The bar charts compare performance across regions or product categories.
+
+3. **Filter Data**:
+   - Use the date range selector to focus on specific time periods.
+   - Toggle between regions or product categories to compare performance.
+
+## Challenges
+
+1. **Data Simulation**:
+   - Creating realistic business performance data using R required careful consideration of distributions and ranges.
+   - Ensuring the simulated data accurately reflected real-world business scenarios.
+
+2. **Dashboard Design**:
+   - Balancing simplicity with the need to display complex metrics.
+   - Ensuring the dashboard is intuitive for users with varying levels of technical expertise.
+
+3. **Performance Optimization**:
+   - Handling large datasets while maintaining dashboard responsiveness.
+   - Implementing efficient data processing and visualization techniques.
+
+## Ethical Considerations
+
+This project uses simulated data and does not involve confidential or proprietary business information. The dashboard is designed for educational and demonstration purposes only and is not intended for actual business decision-making.
+
+## Technical Details
+
+### Data Sources
+- **Simulated Data**: Created using R to generate realistic business performance data. The dataset includes metrics such as revenue, customer satisfaction, and sales volume for different regions and products. The simulation process involved generating random values within realistic ranges and distributions to mimic real-world business scenarios.
+
+### Tools Used
+- **R**: For simulating and cleaning the dataset.
+- **Tableau**: For building the interactive dashboard.
+
+## Future Improvements
+
+1. **Real-Time Data Integration**:
+   - Integrate live data feeds for real-time KPI tracking.
+
+2. **Advanced Analytics**:
+   - Add predictive modeling to forecast future performance trends.
+   - Include statistical summaries (e.g., average revenue growth, customer satisfaction trends).
+
+3. **Enhanced UI**:
+   - Add more interactive elements, such as tooltips and animations.
+   - Include a tutorial or guide for first-time users.
+
+4. **Expanded Metrics**:
+   - Include additional KPIs such as employee productivity, marketing ROI, and inventory turnover.
+
+5. **Custom Reporting**:
+   - Allow users to generate and download custom reports based on their selected filters.
+
+## License
+
+This project is licensed under the MIT License. Feel free to use, modify, and distribute the code as needed.
+
+## Acknowledgments
+
+- **R Community**: For open-source libraries like `tidyverse` and `lubridate` that made data simulation possible.
+- **Tableau Community**: For tutorials and resources on dashboard design.
+- Built using R and Tableau.
+- Special thanks to the R and Tableau communities for open-source tools and inspiration.

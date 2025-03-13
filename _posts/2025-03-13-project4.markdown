@@ -1,0 +1,106 @@
+---
+author: Seàn Matthew Cusick
+title:  "GIS Visualisation: Poland's Deforestation Trends"
+date:   2025-03-13 22:30:27 +0100
+categories: Projects 
+---
+
+# _THIS_PAGE_IS_UNDER_CONSTRUCTION_
+
+### Geospatial Data Visualisation in R: Poland's Deforestation
+
+*This project is a personal initiative to explore and visualise deforestation trends in Poland using data from the **Global Forest Change (GFC) 2000-2023 dataset**. Inspired by the work of **Simona Kossak**, a renowned Polish biologist and advocate for forest conservation, and **Milos Popovic**, a geospatial data expert, this project leverages R’s geospatial packages to create compelling visualisations of forest loss over time.*
+
+
+
+## Purpose of the Project
+
+The objective of this project is to analyse and visualise deforestation trends in Poland using geospatial data. By creating interactive maps and visualisations, the project aims to raise awareness about forest loss and its impact on biodiversity, climate, and local ecosystems. The work is inspired by the legacy of **Simona Kossak**, who dedicated her life to protecting Poland’s forests, and the technical expertise of **Milos Popovic** in geospatial data visualisation.
+
+### Key Features:
+- **Geospatial Visualisations**: Interactive maps showing deforestation trends across Poland.
+- **Time Series Analysis**: Visualisations of forest loss over time, highlighting areas of significant change.
+- **Data-Driven Insights**: Analysis of deforestation patterns and their potential causes.
+- **Inspiration from Simona Kossak**: A tribute to her work in forest conservation and biodiversity.
+
+## How to Use the Visualisations
+
+1. **Explore the Map**:
+   - Use the interactive map to explore deforestation trends across Poland.
+   - Zoom in to specific regions to see detailed patterns of forest loss.
+
+2. **Analyse Trends**:
+   - View time series visualisations to understand how deforestation has evolved over the years.
+   - Identify areas with the highest rates of forest loss.
+
+3. **Understand the Data**:
+   - Read the accompanying analysis to learn about the causes and impacts of deforestation in Poland.
+
+## Challenges
+
+1. **Data Processing**:
+   - Working with large geospatial datasets from the **Global Forest Change (GFC) 2000-2023 dataset** required significant preprocessing and cleaning.
+   - Combining multiple data layers (e.g., tree cover, forest loss, and gain) to create a cohesive visualisation.
+
+2. **Geospatial Analysis**:
+   - Learning and applying R’s geospatial packages (e.g., `sf`, `raster`, `leaflet`) to create accurate and compelling visualisations.
+   - Ensuring the visualisations are both informative and accessible to a non-technical audience.
+
+3. **Ethical Considerations**:
+   - Balancing the presentation of data with respect for the environmental and cultural significance of Poland’s forests.
+
+## Ethical Considerations
+
+This project uses publicly available data from the **Global Forest Change (GFC) 2000-2023 dataset** and is intended for educational and awareness purposes. The visualisations aim to highlight the importance of forest conservation and do not advocate for any specific policy or action. The project is inspired by the work of **Simona Kossak**, whose legacy underscores the need for sustainable forest management.
+
+## Technical Details
+
+### Data Sources
+- **Global Forest Change (GFC) 2000-2023 Dataset**:
+  - **Tree Canopy Cover for Year 2000 (`treecover2000`)**: Canopy closure for all vegetation taller than 5m in height, encoded as a percentage per grid cell (0-100).
+  - **Global Forest Cover Gain 2000-2012 (`gain`)**: Forest gain during 2000-2012, encoded as 1 (gain) or 0 (no gain).
+  - **Year of Gross Forest Cover Loss Event (`lossyear`)**: Forest loss during 2000-2023, encoded as 0 (no loss) or values 1-20 representing loss detected primarily in 2001-2023.
+  - **Data Mask (`datamask`)**: Areas of no data (0), mapped land surface (1), and persistent water bodies (2).
+  - **Circa Year 2000 Landsat 7 Cloud-Free Image Composite (`first`)**: Reference multispectral imagery from the first available year (typically 2000).
+  - **Circa Year 2023 Landsat Cloud-Free Image Composite (`last`)**: Reference multispectral imagery from the last available year (typically 2023).
+  - **License**: Creative Commons Attribution 4.0 International License. Data sourced from [Hansen et al., 2013](https://glad.earthengine.app/view/global-forest-change).
+
+### Tools Used
+- **R**: For data processing, analysis, and visualisation.
+- **Geospatial Packages**:
+  - `sf`: For handling spatial data.
+  - `raster`: For working with raster data.
+  - `leaflet`: For creating interactive maps.
+  - `ggplot2`: For static visualisations.
+- **Inspiration**:
+  - **Simona Kossak**: For her dedication to forest conservation.
+  - **Milos Popovic**: For his expertise in geospatial data visualisation (see his work on [GitHub](https://github.com/milos-agathon)).
+
+## Future Improvements
+
+1. **Interactive Dashboard**:
+   - Develop an interactive Shiny app to allow users to explore deforestation trends dynamically.
+
+2. **Expanded Analysis**:
+   - Include additional metrics such as carbon emissions from deforestation and biodiversity loss.
+
+3. **Regional Comparisons**:
+   - Compare deforestation trends in Poland with other countries in Europe.
+
+4. **Community Engagement**:
+   - Collaborate with local organisations to raise awareness about forest conservation.
+
+5. **Real-Time Data Integration**:
+   - Integrate real-time or near-real-time deforestation data for up-to-date analysis.
+
+## License
+
+This project is licensed under the MIT License. Feel free to use, modify, and distribute the code as needed.
+
+## Acknowledgments
+
+- **Global Forest Change (GFC) 2000-2023 Dataset**: For providing the deforestation data. Data sourced from [Hansen et al., 2013](https://glad.earthengine.app/view/global-forest-change).
+- **Simona Kossak**: For inspiring this project through her lifelong dedication to forest conservation.
+- **Milos Popovic**: For his expertise in geospatial data visualisation and open-source contributions.
+- The R community for open-source libraries like `sf`, `raster`, and `leaflet`.
+- Built using R and its geospatial packages.

@@ -1,0 +1,101 @@
+---
+author: Seàn Matthew Cusick
+title:  "COVID Dashboard: Tracking Infection Rates and Deaths"
+date:   2025-02-10 22:30:27 +0100
+categories: Projects 
+---
+# _THIS_PAGE_IS_UNDER_CONSTRUCTION_
+
+### Interactive Shiny App in R: COVID Dashboard
+
+*This app is a personal project and is not related to any work done for clients. This app was inspired by a group project completed for the Data Analysis intensive bootcamp conducted by CodeClan in 2021. My placement in this course was fully funded by the Scottish Government through their [Digital Start Fund](https://www.gov.scot/news/investing-in-digital-skills/). The group project can be found [here](https://github.com/sean-m-cusick/WAP_SHS_APP).*
+
+
+## Purpose of the App
+
+The objective of this Shiny app was to test my ability to wrangle and clean some unweildly datasets, and convert that into a informative dashboard that is also able to convey a story of what happened to Scotland during 2019-2021. The dashboard itself was designed for tracking COVID-19 infection rates and deaths across different regions in Scotland. The app visualizes key metrics such as daily cases, cumulative deaths, and infection trends, allowing users to explore the impact of the pandemic over time and by location. 
+
+### Key Features:
+- **Interactive Map**: Users can select a region in Scotland to view COVID-19 data.
+- **Time Series Plots**: Visualize trends in infection rates and deaths over time.
+- **Data Filters**: Filter data by date range, health board, or specific metrics (e.g., cases, deaths, hospitalizations).
+- **Colorblind-Friendly Design**: The dashboard uses a custom color palette for better accessibility.
+
+## How to Use the App
+
+1. **Select a Region**:
+   - Use the dropdown menu or interactive map to choose a health board or region in Scotland.
+   - The dashboard will update to display COVID-19 data for the selected area.
+
+2. **Explore Trends**:
+   - The time series plots show trends in infection rates and deaths:
+     - **Daily Cases**: The number of new COVID-19 cases reported each day.
+     - **Cumulative Deaths**: The total number of deaths over time.
+     - **Hospitalizations**: The number of COVID-19-related hospital admissions.
+
+3. **Filter Data**:
+   - Use the date range selector to focus on specific time periods.
+   - Toggle between metrics (e.g., cases, deaths, hospitalizations) to compare different aspects of the data.
+
+## Challenges
+
+1. **Data Integration**:
+   - Aggregating and cleaning COVID-19 data from **Public Health Scotland** required significant effort.
+   - Ensuring data consistency and accuracy across different health boards and time periods.
+
+2. **Performance Optimization**:
+   - Handling large datasets while maintaining app responsiveness was a key challenge.
+   - Implementing efficient data processing and visualization techniques to ensure smooth user experience.
+
+3. **User Interface Design**:
+   - Designing an intuitive and accessible interface for users with varying levels of technical expertise.
+   - Balancing simplicity with the need to display complex data.
+
+## Ethical Considerations
+
+This app is a personal project and does not use confidential or proprietary data. The COVID-19 data is sourced from **Public Health Scotland** and is released under the **Open Government Licence**. The app is designed to help users understand the impact of the pandemic and is not intended for medical or policy decision-making.
+
+## Technical Details
+
+### Data Sources
+- COVID-19 data is sourced from **Public Health Scotland** via the [Scottish Health and Social Care Open Data platform](https://www.opendata.nhs.scot/). This platform provides access to statistics and reference data for information and re-use, managed by Public Health Scotland.
+
+### Libraries Used
+- **Shiny**: For building the interactive web app.
+- **Leaflet**: For displaying the interactive map.
+- **Plotly**: For creating interactive time series plots.
+- **Tidyverse**: For data manipulation and cleaning.
+- **Lubridate**: For handling date-time data.
+- **DT**: For displaying interactive data tables.
+
+## Future Improvements
+
+1. **Real-Time Data Integration**:
+   - Integrate real-time COVID-19 data for up-to-date analysis.
+
+2. **Advanced Analytics**:
+   - Add predictive modeling to forecast future infection rates and deaths.
+   - Include statistical summaries (e.g., infection rate trends, mortality rates).
+
+3. **Enhanced UI**:
+   - Add more interactive elements, such as tooltips and animations.
+   - Include a tutorial or guide for first-time users.
+
+4. **Expanded Coverage**:
+   - Include additional metrics such as vaccination rates and testing data.
+
+5. **Custom Reporting**:
+   - Allow users to generate and download custom reports based on their selected filters.
+
+## License
+
+This project is licensed under the MIT License. Feel free to use, modify, and distribute the code as needed.
+
+## Acknowledgments
+
+- Inspired by the CodeClan Data Analysis bootcamp group project.
+- **Public Health Scotland**: For providing COVID-19 data via the [Scottish Health and Social Care Open Data platform](https://www.opendata.nhs.scot/).
+- **Scottish Government**: For funding my placement in the CodeClan bootcamp through the Digital Start Fund.
+- The R community for open-source libraries like `shiny`, `leaflet`, and `plotly`.
+- Built using R and the Shiny framework.
+- Special thanks to the R community for open-source libraries and tools that made this project possible.
