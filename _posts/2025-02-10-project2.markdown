@@ -4,9 +4,9 @@ title:  "COVID Dashboard: Tracking Infection Rates and Deaths"
 date:   2025-02-10 22:30:27 +0100
 categories: Projects 
 ---
-# _THIS_PAGE_IS_UNDER_CONSTRUCTION_
+### Project2 - Interactive Shiny App in R: COVID Dashboard
 
-### Interactive Shiny App in R: COVID Dashboard
+# _THIS_PAGE_IS_UNDER_CONSTRUCTION_
 
 *This app is a personal project and is not related to any work done for clients. This app was inspired by a group project completed for the Data Analysis intensive bootcamp conducted by CodeClan in 2021. My placement in this course was fully funded by the Scottish Government through their [Digital Start Fund](https://www.gov.scot/news/investing-in-digital-skills/). The group project can be found [here](https://github.com/sean-m-cusick/WAP_SHS_APP).*
 

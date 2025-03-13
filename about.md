@@ -45,7 +45,7 @@ Below is a visual representation of my international career journey:
 - Extensive experience managing cross-sector collaborations, including raising **over €500,000** for a satellite project in the space industry.
 
 ### Project Leadership:
-- Led teams in **Kazakhstan**, **Krygzstan**, **Myanmar**; developing expertise in strategic planning, budgets, and project finance.
+- Led teams in **Kazakhstan**, **Krygzstan**, **Myanmar**, and **Scotland**; developing expertise in strategic planning, budgets, and project finance.
 
 ### Consulting:
 - Supported clients with ERP systems, training programmes, and data-driven insights, simplifying complex data into clear, actionable strategies.
@@ -92,7 +92,7 @@ Over the past three years, I have worked as a data analyst and consultant, suppo
 
 - Business Intelligence, Business Analytics, Business Synthesis  
 - Data Collection, Processing, Analysis, and Visualization  
-- Data Visualization Tools: Tableau, Power BI, R (RStudio), arcGIS (Geographic Information System), Positron  
+- Data Visualization Tools: Tableau, Power BI, R (RStudio), ArcGIS (Geographic Information System), Positron  
 - Visualizations: Graphs, Maps, Infographics  
 - Statistical Analysis: Hypothesis Testing, A/B Testing, Regression, Bayesian Statistics  
 - Time Series Analysis  
@@ -100,7 +100,7 @@ Over the past three years, I have worked as a data analyst and consultant, suppo
 
 ### Programming Languages
 
-- C++, Java, Python, SQL, R, uScript, Three.js, Jekyll, HTML  
+- c#, C++, Java, JavaScript, Python, SQL, R, uScript, Three.js, Jekyll, HTML  
 
 ### Art & Design
 
@@ -124,7 +124,7 @@ Over the past three years, I have worked as a data analyst and consultant, suppo
 - Affinity Publisher  
 - Content Creation: Blog Posts, Social Media Content, Podcasts  
 - Copywriting  
-- Microsoft Office: Word, Excel, PowerPoint, Access  
+- Microsoft Office: Word, Excel (advanced - VlookUp, Pivot tables, power query), PowerPoint, Access  
 - Grant Applications  
 
 ### Version Control
@@ -204,7 +204,7 @@ Over the past three years, I have worked as a data analyst and consultant, suppo
 - Academic level: MOOC
 - Field of study:  GIS with COPERNICUS satellite data
 
- ### EC's SPACE ACADEMY
+### EC's SPACE ACADEMY
 - Institute: European Commission [Space Academy](https://cordis.europa.eu/project/id/776356)
 - Date: 03/09/2019 – 10/09/2019
 - Location: Helsinki, Finland
@@ -216,7 +216,7 @@ Over the past three years, I have worked as a data analyst and consultant, suppo
 - Date: 05/06/2012 – 10/06/2012 
 - Location: Edinburgh, United Kingdom 
 - Academic level: N/A
-- Field: Public Speaking / Conference Management
+- Field: Public Speaking / Conference Management / Session Design
 
 
 <hr>

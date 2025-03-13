@@ -5,9 +5,9 @@ date:   2025-03-13 22:30:27 +0100
 categories: Projects 
 ---
 
-# _THIS_PAGE_IS_UNDER_CONSTRUCTION_
+### Project4 - Geospatial Data Visualisation in R: Poland's Deforestation
 
-### Geospatial Data Visualisation in R: Poland's Deforestation
+# _THIS_PAGE_IS_UNDER_CONSTRUCTION_
 
 *This project is a personal initiative to explore and visualise deforestation trends in Poland using data from the **Global Forest Change (GFC) 2000-2023 dataset**. Inspired by the work of **Simona Kossak**, a renowned Polish biologist and advocate for forest conservation, and **Milos Popovic**, a geospatial data expert, this project leverages R’s geospatial packages to create compelling visualisations of forest loss over time.*
 

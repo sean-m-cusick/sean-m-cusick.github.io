@@ -5,9 +5,9 @@ date:   2025-02-28 22:30:27 +0100
 categories: Projects 
 ---
 
-# _THIS_PAGE_IS_UNDER_CONSTRUCTION_
+### Project3 - Interactive Tableau Dashboard: KPI Tracking
 
-### Interactive Tableau Dashboard: KPI Tracking
+# _THIS_PAGE_IS_UNDER_CONSTRUCTION_
 
 *This project is a personal initiative to create a dashboard for tracking key performance indicators (KPIs) in business operations. The dashboard visualizes critical metrics such as revenue, customer satisfaction, and operational performance, providing insights for decision-making. The data used in this project was simulated using R to mimic real-world business scenarios.*
 

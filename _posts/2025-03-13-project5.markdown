@@ -5,10 +5,9 @@ date:   2025-03-13 22:30:27 +0100
 categories: Projects 
 ---
 
+### Project5 - Stock Market Analysis and Prediction using Python
+
 # _THIS_PAGE_IS_UNDER_CONSTRUCTION_
-
-
-### Stock Market Analysis and Prediction using Python
 
 *This project focuses on analyzing historical stock market data and building a predictive model to forecast future stock prices. Using Python libraries like `yfinance`, `pandas`, and `scikit-learn`, the project provides insights into stock trends and helps investors make data-driven decisions.*
 
