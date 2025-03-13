@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COVID Dashboard: Tracking Infection Rates and Deaths</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/custom.css">
+  <link rel="icon" type="image/png" href="/assets/images/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/images/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/images/site.webmanifest" />
+  <meta name="theme-color" content="#154547">
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>COVID Dashboard: Tracking Infection Rates and Deaths | S M Cusick’s Data Science Portfolio</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="COVID Dashboard: Tracking Infection Rates and Deaths" />
+<meta name="author" content="Seàn Matthew Cusick" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="THIS_PAGE_IS_UNDER_CONSTRUCTION" />
+<meta property="og:description" content="THIS_PAGE_IS_UNDER_CONSTRUCTION" />
+<link rel="canonical" href="https://sean-m-cusick.github.io//projects/2025/02/10/project2.html" />
+<meta property="og:url" content="https://sean-m-cusick.github.io//projects/2025/02/10/project2.html" />
+<meta property="og:site_name" content="S M Cusick’s Data Science Portfolio" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-02-10T21:30:27+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="COVID Dashboard: Tracking Infection Rates and Deaths" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Seàn Matthew Cusick"},"dateModified":"2025-02-10T21:30:27+00:00","datePublished":"2025-02-10T21:30:27+00:00","description":"THIS_PAGE_IS_UNDER_CONSTRUCTION","headline":"COVID Dashboard: Tracking Infection Rates and Deaths","mainEntityOfPage":{"@type":"WebPage","@id":"https://sean-m-cusick.github.io//projects/2025/02/10/project2.html"},"url":"https://sean-m-cusick.github.io//projects/2025/02/10/project2.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+  <nav class="navbar">
+  <div class="navbar-container">
+    <a href="/" class="navbar-brand">S M Cusick's Data Science Portfolio</a>
+    <button class="navbar-toggle" aria-label="Toggle navigation" id="navbar-toggle">
+      <span class="navbar-toggle-icon">&#9776;</span>
+    </button>
+    <ul class="navbar-nav" id="navbar-menu">
+      <li class="nav-item"><a href="/" class="nav-link">HOME</a></li>
+      <li class="nav-item"><a href="/about" class="nav-link">ABOUT</a></li>
+      <li class="nav-item"><a href="/project_portfolio" class="nav-link">PORTFOLIO</a></li>
+      <li class="nav-item"><a href="/blog" class="nav-link">BLOG</a></li>
+      <li class="nav-item fork"><a href="https://github.com/sean-m-cusick/sean-m-cusick.github.io">View On GitHub</a></li>
+      
+    </ul>
+  </div>
+</nav>
+<!--
+<nav>
+    
+      <a href="/">HOME</a>
+    
+      <a href="/about/">ABOUT</a>
+    
+      <a href="/project_portfolio.html">PORTFOLIO</a>
+    
+      <a href="/blog.html">BLOG</a>
+    
+  </nav>
+  <-->
+
+  <main class="wrapper">
+    <h1>COVID Dashboard: Tracking Infection Rates and Deaths</h1>
+
+<p>
+  10 Feb 2025
+  
+  
+</p>
+
+<h1 id="this_page_is_under_construction"><em>THIS_PAGE_IS_UNDER_CONSTRUCTION</em></h1>
+
+<h3 id="interactive-shiny-app-in-r-covid-dashboard">Interactive Shiny App in R: COVID Dashboard</h3>
+
+<p><em>This app is a personal project and is not related to any work done for clients. This app was inspired by a group project completed for the Data Analysis intensive bootcamp conducted by CodeClan in 2021. My placement in this course was fully funded by the Scottish Government through their <a href="https://www.gov.scot/news/investing-in-digital-skills/">Digital Start Fund</a>. The group project can be found <a href="https://github.com/sean-m-cusick/WAP_SHS_APP">here</a>.</em></p>
+
+<h2 id="purpose-of-the-app">Purpose of the App</h2>
+
+<p>The objective of this Shiny app was to test my ability to wrangle and clean some unweildly datasets, and convert that into a informative dashboard that is also able to convey a story of what happened to Scotland during 2019-2021. The dashboard itself was designed for tracking COVID-19 infection rates and deaths across different regions in Scotland. The app visualizes key metrics such as daily cases, cumulative deaths, and infection trends, allowing users to explore the impact of the pandemic over time and by location.</p>
+
+<h3 id="key-features">Key Features:</h3>
+<ul>
+  <li><strong>Interactive Map</strong>: Users can select a region in Scotland to view COVID-19 data.</li>
+  <li><strong>Time Series Plots</strong>: Visualize trends in infection rates and deaths over time.</li>
+  <li><strong>Data Filters</strong>: Filter data by date range, health board, or specific metrics (e.g., cases, deaths, hospitalizations).</li>
+  <li><strong>Colorblind-Friendly Design</strong>: The dashboard uses a custom color palette for better accessibility.</li>
+</ul>
+
+<h2 id="how-to-use-the-app">How to Use the App</h2>
+
+<ol>
+  <li><strong>Select a Region</strong>:
+    <ul>
+      <li>Use the dropdown menu or interactive map to choose a health board or region in Scotland.</li>
+      <li>The dashboard will update to display COVID-19 data for the selected area.</li>
+    </ul>
+  </li>
+  <li><strong>Explore Trends</strong>:
+    <ul>
+      <li>The time series plots show trends in infection rates and deaths:
+        <ul>
+          <li><strong>Daily Cases</strong>: The number of new COVID-19 cases reported each day.</li>
+          <li><strong>Cumulative Deaths</strong>: The total number of deaths over time.</li>
+          <li><strong>Hospitalizations</strong>: The number of COVID-19-related hospital admissions.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Filter Data</strong>:
+    <ul>
+      <li>Use the date range selector to focus on specific time periods.</li>
+      <li>Toggle between metrics (e.g., cases, deaths, hospitalizations) to compare different aspects of the data.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="challenges">Challenges</h2>
+
+<ol>
+  <li><strong>Data Integration</strong>:
+    <ul>
+      <li>Aggregating and cleaning COVID-19 data from <strong>Public Health Scotland</strong> required significant effort.</li>
+      <li>Ensuring data consistency and accuracy across different health boards and time periods.</li>
+    </ul>
+  </li>
+  <li><strong>Performance Optimization</strong>:
+    <ul>
+      <li>Handling large datasets while maintaining app responsiveness was a key challenge.</li>
+      <li>Implementing efficient data processing and visualization techniques to ensure smooth user experience.</li>
+    </ul>
+  </li>
+  <li><strong>User Interface Design</strong>:
+    <ul>
+      <li>Designing an intuitive and accessible interface for users with varying levels of technical expertise.</li>
+      <li>Balancing simplicity with the need to display complex data.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="ethical-considerations">Ethical Considerations</h2>
+
+<p>This app is a personal project and does not use confidential or proprietary data. The COVID-19 data is sourced from <strong>Public Health Scotland</strong> and is released under the <strong>Open Government Licence</strong>. The app is designed to help users understand the impact of the pandemic and is not intended for medical or policy decision-making.</p>
+
+<h2 id="technical-details">Technical Details</h2>
+
+<h3 id="data-sources">Data Sources</h3>
+<ul>
+  <li>COVID-19 data is sourced from <strong>Public Health Scotland</strong> via the <a href="https://www.opendata.nhs.scot/">Scottish Health and Social Care Open Data platform</a>. This platform provides access to statistics and reference data for information and re-use, managed by Public Health Scotland.</li>
+</ul>
+
+<h3 id="libraries-used">Libraries Used</h3>
+<ul>
+  <li><strong>Shiny</strong>: For building the interactive web app.</li>
+  <li><strong>Leaflet</strong>: For displaying the interactive map.</li>
+  <li><strong>Plotly</strong>: For creating interactive time series plots.</li>
+  <li><strong>Tidyverse</strong>: For data manipulation and cleaning.</li>
+  <li><strong>Lubridate</strong>: For handling date-time data.</li>
+  <li><strong>DT</strong>: For displaying interactive data tables.</li>
+</ul>
+
+<h2 id="future-improvements">Future Improvements</h2>
+
+<ol>
+  <li><strong>Real-Time Data Integration</strong>:
+    <ul>
+      <li>Integrate real-time COVID-19 data for up-to-date analysis.</li>
+    </ul>
+  </li>
+  <li><strong>Advanced Analytics</strong>:
+    <ul>
+      <li>Add predictive modeling to forecast future infection rates and deaths.</li>
+      <li>Include statistical summaries (e.g., infection rate trends, mortality rates).</li>
+    </ul>
+  </li>
+  <li><strong>Enhanced UI</strong>:
+    <ul>
+      <li>Add more interactive elements, such as tooltips and animations.</li>
+      <li>Include a tutorial or guide for first-time users.</li>
+    </ul>
+  </li>
+  <li><strong>Expanded Coverage</strong>:
+    <ul>
+      <li>Include additional metrics such as vaccination rates and testing data.</li>
+    </ul>
+  </li>
+  <li><strong>Custom Reporting</strong>:
+    <ul>
+      <li>Allow users to generate and download custom reports based on their selected filters.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="license">License</h2>
+
+<p>This project is licensed under the MIT License. Feel free to use, modify, and distribute the code as needed.</p>
+
+<h2 id="acknowledgments">Acknowledgments</h2>
+
+<ul>
+  <li>Inspired by the CodeClan Data Analysis bootcamp group project.</li>
+  <li><strong>Public Health Scotland</strong>: For providing COVID-19 data via the <a href="https://www.opendata.nhs.scot/">Scottish Health and Social Care Open Data platform</a>.</li>
+  <li><strong>Scottish Government</strong>: For funding my placement in the CodeClan bootcamp through the Digital Start Fund.</li>
+  <li>The R community for open-source libraries like <code class="language-plaintext highlighter-rouge">shiny</code>, <code class="language-plaintext highlighter-rouge">leaflet</code>, and <code class="language-plaintext highlighter-rouge">plotly</code>.</li>
+  <li>Built using R and the Shiny framework.</li>
+  <li>Special thanks to the R community for open-source libraries and tools that made this project possible.</li>
+</ul>
+
+  </main>
+
+  <!-- footer.html -->
+<footer>
+    <hr>
+    <h1>S M Cusick's Data Science Portfolio</h1>
+    <p>Seàn M. Cusick's Data Science Portfolio showcases projects in data analysis, data visualisation, and predictive modeling. Demonstrating expertise in Python, R, and SQL, Seán delivers actionable insights from complex data. <hr> Currently seeking Data Analyst or Business Analyst opportunities.</p>
+    <hr>
+    <span class="credits left">Project maintained by <a href="https://github.com/sean-m-cusick">sean-m-cusick</a></span>
+    <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/s_m_cusick">s_m_cusick</a></span>
+  </footer>
+  <script src="/assets/js/tabs.js"></script>
+</body>
+</html>
+

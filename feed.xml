@@ -1,4 +1,263 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://sean-m-cusick.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://sean-m-cusick.github.io//" rel="alternate" type="text/html" /><updated>2025-02-19T13:39:14+00:00</updated><id>https://sean-m-cusick.github.io//feed.xml</id><title type="html">S M Cusick’s Data Science Portfolio</title><subtitle>Seàn M. Cusick&apos;s Data Science Portfolio showcases projects in data analysis, data visualisation, and predictive modeling. Demonstrating expertise in Python, R, and SQL, Seán delivers actionable insights from complex data. &lt;hr&gt; Currently seeking Data Analyst or Business Analyst opportunities.</subtitle><entry><title type="html">Landing Page Explaination</title><link href="https://sean-m-cusick.github.io//2025/02/02/three.js.html" rel="alternate" type="text/html" title="Landing Page Explaination" /><published>2025-02-02T00:00:00+00:00</published><updated>2025-02-02T00:00:00+00:00</updated><id>https://sean-m-cusick.github.io//2025/02/02/three.js</id><content type="html" xml:base="https://sean-m-cusick.github.io//2025/02/02/three.js.html"><![CDATA[<link rel="stylesheet" href="/assets/css/monokai.css" />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://sean-m-cusick.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://sean-m-cusick.github.io//" rel="alternate" type="text/html" /><updated>2025-03-13T20:52:12+00:00</updated><id>https://sean-m-cusick.github.io//feed.xml</id><title type="html">S M Cusick’s Data Science Portfolio</title><subtitle>Seàn M. Cusick&apos;s Data Science Portfolio showcases projects in data analysis, data visualisation, and predictive modeling. Demonstrating expertise in Python, R, and SQL, Seán delivers actionable insights from complex data. &lt;hr&gt; Currently seeking Data Analyst or Business Analyst opportunities.</subtitle><entry><title type="html">KPI Dashboard: Tracking Business Performance</title><link href="https://sean-m-cusick.github.io//projects/2025/02/28/project3.html" rel="alternate" type="text/html" title="KPI Dashboard: Tracking Business Performance" /><published>2025-02-28T21:30:27+00:00</published><updated>2025-02-28T21:30:27+00:00</updated><id>https://sean-m-cusick.github.io//projects/2025/02/28/project3</id><content type="html" xml:base="https://sean-m-cusick.github.io//projects/2025/02/28/project3.html"><![CDATA[<h1 id="this_page_is_under_construction"><em>THIS_PAGE_IS_UNDER_CONSTRUCTION</em></h1>
+
+<h3 id="interactive-tableau-dashboard-kpi-tracking">Interactive Tableau Dashboard: KPI Tracking</h3>
+
+<p><em>This project is a personal initiative to create a dashboard for tracking key performance indicators (KPIs) in business operations. The dashboard visualizes critical metrics such as revenue, customer satisfaction, and operational performance, providing insights for decision-making. The data used in this project was simulated using R to mimic real-world business scenarios.</em></p>
+
+<h2 id="purpose-of-the-dashboard">Purpose of the Dashboard</h2>
+
+<p>The objective of this Tableau dashboard is to help businesses monitor and analyze their performance through key metrics. By visualizing KPIs in an interactive and user-friendly format, the dashboard enables stakeholders to identify trends, spot issues, and make data-driven decisions.</p>
+
+<h3 id="key-features">Key Features:</h3>
+<ul>
+  <li><strong>Interactive Visualizations</strong>: Bar charts, line graphs, and pie charts to represent KPIs.</li>
+  <li><strong>Custom Filters</strong>: Filter data by date range, region, or product category.</li>
+  <li><strong>Simulated Data</strong>: Realistic business performance data generated using R.</li>
+  <li><strong>Drill-Down Capability</strong>: Explore detailed metrics by clicking on summary visualizations.</li>
+</ul>
+
+<h2 id="how-to-use-the-dashboard">How to Use the Dashboard</h2>
+
+<ol>
+  <li><strong>Select a Metric</strong>:
+    <ul>
+      <li>Use the dropdown menu or interactive filters to choose a KPI (e.g., revenue, customer satisfaction).</li>
+      <li>The dashboard will update to display the selected metric.</li>
+    </ul>
+  </li>
+  <li><strong>Explore Trends</strong>:
+    <ul>
+      <li>The line graphs show trends over time (e.g., monthly revenue, quarterly customer satisfaction scores).</li>
+      <li>The bar charts compare performance across regions or product categories.</li>
+    </ul>
+  </li>
+  <li><strong>Filter Data</strong>:
+    <ul>
+      <li>Use the date range selector to focus on specific time periods.</li>
+      <li>Toggle between regions or product categories to compare performance.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="challenges">Challenges</h2>
+
+<ol>
+  <li><strong>Data Simulation</strong>:
+    <ul>
+      <li>Creating realistic business performance data using R required careful consideration of distributions and ranges.</li>
+      <li>Ensuring the simulated data accurately reflected real-world business scenarios.</li>
+    </ul>
+  </li>
+  <li><strong>Dashboard Design</strong>:
+    <ul>
+      <li>Balancing simplicity with the need to display complex metrics.</li>
+      <li>Ensuring the dashboard is intuitive for users with varying levels of technical expertise.</li>
+    </ul>
+  </li>
+  <li><strong>Performance Optimization</strong>:
+    <ul>
+      <li>Handling large datasets while maintaining dashboard responsiveness.</li>
+      <li>Implementing efficient data processing and visualization techniques.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="ethical-considerations">Ethical Considerations</h2>
+
+<p>This project uses simulated data and does not involve confidential or proprietary business information. The dashboard is designed for educational and demonstration purposes only and is not intended for actual business decision-making.</p>
+
+<h2 id="technical-details">Technical Details</h2>
+
+<h3 id="data-sources">Data Sources</h3>
+<ul>
+  <li><strong>Simulated Data</strong>: Created using R to generate realistic business performance data. The dataset includes metrics such as revenue, customer satisfaction, and sales volume for different regions and products. The simulation process involved generating random values within realistic ranges and distributions to mimic real-world business scenarios.</li>
+</ul>
+
+<h3 id="tools-used">Tools Used</h3>
+<ul>
+  <li><strong>R</strong>: For simulating and cleaning the dataset.</li>
+  <li><strong>Tableau</strong>: For building the interactive dashboard.</li>
+</ul>
+
+<h2 id="future-improvements">Future Improvements</h2>
+
+<ol>
+  <li><strong>Real-Time Data Integration</strong>:
+    <ul>
+      <li>Integrate live data feeds for real-time KPI tracking.</li>
+    </ul>
+  </li>
+  <li><strong>Advanced Analytics</strong>:
+    <ul>
+      <li>Add predictive modeling to forecast future performance trends.</li>
+      <li>Include statistical summaries (e.g., average revenue growth, customer satisfaction trends).</li>
+    </ul>
+  </li>
+  <li><strong>Enhanced UI</strong>:
+    <ul>
+      <li>Add more interactive elements, such as tooltips and animations.</li>
+      <li>Include a tutorial or guide for first-time users.</li>
+    </ul>
+  </li>
+  <li><strong>Expanded Metrics</strong>:
+    <ul>
+      <li>Include additional KPIs such as employee productivity, marketing ROI, and inventory turnover.</li>
+    </ul>
+  </li>
+  <li><strong>Custom Reporting</strong>:
+    <ul>
+      <li>Allow users to generate and download custom reports based on their selected filters.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="license">License</h2>
+
+<p>This project is licensed under the MIT License. Feel free to use, modify, and distribute the code as needed.</p>
+
+<h2 id="acknowledgments">Acknowledgments</h2>
+
+<ul>
+  <li><strong>R Community</strong>: For open-source libraries like <code class="language-plaintext highlighter-rouge">tidyverse</code> and <code class="language-plaintext highlighter-rouge">lubridate</code> that made data simulation possible.</li>
+  <li><strong>Tableau Community</strong>: For tutorials and resources on dashboard design.</li>
+  <li>Built using R and Tableau.</li>
+  <li>Special thanks to the R and Tableau communities for open-source tools and inspiration.</li>
+</ul>]]></content><author><name>Seàn Matthew Cusick</name></author><category term="Projects" /><summary type="html"><![CDATA[THIS_PAGE_IS_UNDER_CONSTRUCTION]]></summary></entry><entry><title type="html">COVID Dashboard: Tracking Infection Rates and Deaths</title><link href="https://sean-m-cusick.github.io//projects/2025/02/10/project2.html" rel="alternate" type="text/html" title="COVID Dashboard: Tracking Infection Rates and Deaths" /><published>2025-02-10T21:30:27+00:00</published><updated>2025-02-10T21:30:27+00:00</updated><id>https://sean-m-cusick.github.io//projects/2025/02/10/project2</id><content type="html" xml:base="https://sean-m-cusick.github.io//projects/2025/02/10/project2.html"><![CDATA[<h1 id="this_page_is_under_construction"><em>THIS_PAGE_IS_UNDER_CONSTRUCTION</em></h1>
+
+<h3 id="interactive-shiny-app-in-r-covid-dashboard">Interactive Shiny App in R: COVID Dashboard</h3>
+
+<p><em>This app is a personal project and is not related to any work done for clients. This app was inspired by a group project completed for the Data Analysis intensive bootcamp conducted by CodeClan in 2021. My placement in this course was fully funded by the Scottish Government through their <a href="https://www.gov.scot/news/investing-in-digital-skills/">Digital Start Fund</a>. The group project can be found <a href="https://github.com/sean-m-cusick/WAP_SHS_APP">here</a>.</em></p>
+
+<h2 id="purpose-of-the-app">Purpose of the App</h2>
+
+<p>The objective of this Shiny app was to test my ability to wrangle and clean some unweildly datasets, and convert that into a informative dashboard that is also able to convey a story of what happened to Scotland during 2019-2021. The dashboard itself was designed for tracking COVID-19 infection rates and deaths across different regions in Scotland. The app visualizes key metrics such as daily cases, cumulative deaths, and infection trends, allowing users to explore the impact of the pandemic over time and by location.</p>
+
+<h3 id="key-features">Key Features:</h3>
+<ul>
+  <li><strong>Interactive Map</strong>: Users can select a region in Scotland to view COVID-19 data.</li>
+  <li><strong>Time Series Plots</strong>: Visualize trends in infection rates and deaths over time.</li>
+  <li><strong>Data Filters</strong>: Filter data by date range, health board, or specific metrics (e.g., cases, deaths, hospitalizations).</li>
+  <li><strong>Colorblind-Friendly Design</strong>: The dashboard uses a custom color palette for better accessibility.</li>
+</ul>
+
+<h2 id="how-to-use-the-app">How to Use the App</h2>
+
+<ol>
+  <li><strong>Select a Region</strong>:
+    <ul>
+      <li>Use the dropdown menu or interactive map to choose a health board or region in Scotland.</li>
+      <li>The dashboard will update to display COVID-19 data for the selected area.</li>
+    </ul>
+  </li>
+  <li><strong>Explore Trends</strong>:
+    <ul>
+      <li>The time series plots show trends in infection rates and deaths:
+        <ul>
+          <li><strong>Daily Cases</strong>: The number of new COVID-19 cases reported each day.</li>
+          <li><strong>Cumulative Deaths</strong>: The total number of deaths over time.</li>
+          <li><strong>Hospitalizations</strong>: The number of COVID-19-related hospital admissions.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Filter Data</strong>:
+    <ul>
+      <li>Use the date range selector to focus on specific time periods.</li>
+      <li>Toggle between metrics (e.g., cases, deaths, hospitalizations) to compare different aspects of the data.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="challenges">Challenges</h2>
+
+<ol>
+  <li><strong>Data Integration</strong>:
+    <ul>
+      <li>Aggregating and cleaning COVID-19 data from <strong>Public Health Scotland</strong> required significant effort.</li>
+      <li>Ensuring data consistency and accuracy across different health boards and time periods.</li>
+    </ul>
+  </li>
+  <li><strong>Performance Optimization</strong>:
+    <ul>
+      <li>Handling large datasets while maintaining app responsiveness was a key challenge.</li>
+      <li>Implementing efficient data processing and visualization techniques to ensure smooth user experience.</li>
+    </ul>
+  </li>
+  <li><strong>User Interface Design</strong>:
+    <ul>
+      <li>Designing an intuitive and accessible interface for users with varying levels of technical expertise.</li>
+      <li>Balancing simplicity with the need to display complex data.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="ethical-considerations">Ethical Considerations</h2>
+
+<p>This app is a personal project and does not use confidential or proprietary data. The COVID-19 data is sourced from <strong>Public Health Scotland</strong> and is released under the <strong>Open Government Licence</strong>. The app is designed to help users understand the impact of the pandemic and is not intended for medical or policy decision-making.</p>
+
+<h2 id="technical-details">Technical Details</h2>
+
+<h3 id="data-sources">Data Sources</h3>
+<ul>
+  <li>COVID-19 data is sourced from <strong>Public Health Scotland</strong> via the <a href="https://www.opendata.nhs.scot/">Scottish Health and Social Care Open Data platform</a>. This platform provides access to statistics and reference data for information and re-use, managed by Public Health Scotland.</li>
+</ul>
+
+<h3 id="libraries-used">Libraries Used</h3>
+<ul>
+  <li><strong>Shiny</strong>: For building the interactive web app.</li>
+  <li><strong>Leaflet</strong>: For displaying the interactive map.</li>
+  <li><strong>Plotly</strong>: For creating interactive time series plots.</li>
+  <li><strong>Tidyverse</strong>: For data manipulation and cleaning.</li>
+  <li><strong>Lubridate</strong>: For handling date-time data.</li>
+  <li><strong>DT</strong>: For displaying interactive data tables.</li>
+</ul>
+
+<h2 id="future-improvements">Future Improvements</h2>
+
+<ol>
+  <li><strong>Real-Time Data Integration</strong>:
+    <ul>
+      <li>Integrate real-time COVID-19 data for up-to-date analysis.</li>
+    </ul>
+  </li>
+  <li><strong>Advanced Analytics</strong>:
+    <ul>
+      <li>Add predictive modeling to forecast future infection rates and deaths.</li>
+      <li>Include statistical summaries (e.g., infection rate trends, mortality rates).</li>
+    </ul>
+  </li>
+  <li><strong>Enhanced UI</strong>:
+    <ul>
+      <li>Add more interactive elements, such as tooltips and animations.</li>
+      <li>Include a tutorial or guide for first-time users.</li>
+    </ul>
+  </li>
+  <li><strong>Expanded Coverage</strong>:
+    <ul>
+      <li>Include additional metrics such as vaccination rates and testing data.</li>
+    </ul>
+  </li>
+  <li><strong>Custom Reporting</strong>:
+    <ul>
+      <li>Allow users to generate and download custom reports based on their selected filters.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="license">License</h2>
+
+<p>This project is licensed under the MIT License. Feel free to use, modify, and distribute the code as needed.</p>
+
+<h2 id="acknowledgments">Acknowledgments</h2>
+
+<ul>
+  <li>Inspired by the CodeClan Data Analysis bootcamp group project.</li>
+  <li><strong>Public Health Scotland</strong>: For providing COVID-19 data via the <a href="https://www.opendata.nhs.scot/">Scottish Health and Social Care Open Data platform</a>.</li>
+  <li><strong>Scottish Government</strong>: For funding my placement in the CodeClan bootcamp through the Digital Start Fund.</li>
+  <li>The R community for open-source libraries like <code class="language-plaintext highlighter-rouge">shiny</code>, <code class="language-plaintext highlighter-rouge">leaflet</code>, and <code class="language-plaintext highlighter-rouge">plotly</code>.</li>
+  <li>Built using R and the Shiny framework.</li>
+  <li>Special thanks to the R community for open-source libraries and tools that made this project possible.</li>
+</ul>]]></content><author><name>Seàn Matthew Cusick</name></author><category term="Projects" /><summary type="html"><![CDATA[THIS_PAGE_IS_UNDER_CONSTRUCTION]]></summary></entry><entry><title type="html">Landing Page Explaination</title><link href="https://sean-m-cusick.github.io//2025/02/02/three.js.html" rel="alternate" type="text/html" title="Landing Page Explaination" /><published>2025-02-02T00:00:00+00:00</published><updated>2025-02-02T00:00:00+00:00</updated><id>https://sean-m-cusick.github.io//2025/02/02/three.js</id><content type="html" xml:base="https://sean-m-cusick.github.io//2025/02/02/three.js.html"><![CDATA[<link rel="stylesheet" href="/assets/css/monokai.css" />
 
 <h1 class="custom-heading">Three.js Exploration</h1>
 
