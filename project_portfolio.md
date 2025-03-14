@@ -60,7 +60,7 @@ Click Each tab to see the featured projects, and follow the link at the top for 
   {% endtab %}
   
   {% tab projects project5 %}
-  [>>Project 5<<](/projects/2025/03/14/project5.html)
+  [>>Project 5<<](/projects/2025/03/13/project5.html)
   -   _THIS_PAGE_IS_UNDER_CONSTRUCTION_
   -   **Stock Market Analysis and Prediction**: Leveraging **Python's data science libraries** to analyze historical stock data and predict future prices.  
 
