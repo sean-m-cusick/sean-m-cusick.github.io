@@ -1,7 +1,7 @@
 ---
 author: Seàn Matthew Cusick
 title:  "Stock Market Analysis and Prediction"
-date:   2025-03-13 22:30:27 +0100
+date:   2025-03-14 22:30:27 +0100
 categories: Projects 
 ---
 
