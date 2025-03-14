@@ -12,7 +12,7 @@ Click Each tab to see the featured projects, and follow the link at the top for 
 {% tabs projects %}
   
   {% tab projects project1 %}
-  [>>Project 1<<](/projects/2025/01/24/project1.html)
+  [>>Project 1<<](./_posts/2025-01-24-project1.markdown)
     **Interactive Shiny App in R**: Visualising **meteorological data** through windroses for specific locations and time periods.
    - - Developed using **Shiny** for dynamic data visualisation.
   - - Allows users to explore weather trends with interactive windrose plots.
@@ -25,7 +25,7 @@ Click Each tab to see the featured projects, and follow the link at the top for 
   {% endtab %}
   
   {% tab projects project2 %}
-  [>>Project 2<<](/projects/2025/02/10/project2.html)
+  [>>Project 2<<](./_posts/2025-02-10-project2.markdown)
   -   _THIS_PAGE_IS_UNDER_CONSTRUCTION_
   - **Interactive Shiny App in R**: Analysing **infection rates and deaths** during the COVID-19 pandemic.
   
@@ -38,7 +38,7 @@ Click Each tab to see the featured projects, and follow the link at the top for 
   {% endtab %}
   
   {% tab projects project3 %}
-  [>>Project 3<<](/projects/2025/02/28/project3.html)
+  [>>Project 3<<](./_posts/2025-02-28-project3.markdown)
   -  _THIS_PAGE_IS_UNDER_CONSTRUCTION_
   -   **KPI Dashboard**: Developed using **Tableau** to track and present key performance indicators for business operations.  
 
@@ -49,7 +49,7 @@ Click Each tab to see the featured projects, and follow the link at the top for 
   {% endtab %}
   
   {% tab projects project4 %}
-  [>>Project 4<<](/projects/2025/03/13/project4.html)
+  [>>Project 4<<](./_posts/2025-03-13-project4.markdown)
   -   _THIS_PAGE_IS_UNDER_CONSTRUCTION_
   -   **GIS Visualisation**: Leveraging **R's geospatial packages** to analyse and visualise deforestation trends in Poland using the **Global Forest Change (GFC) 2000-2023 dataset**.  
 
@@ -60,7 +60,7 @@ Click Each tab to see the featured projects, and follow the link at the top for 
   {% endtab %}
   
   {% tab projects project5 %}
-  [>>Project 5<<](/projects/2025/03/13/project5.html)
+  [>>Project 5<<](./_posts/2025-03-13-project5.markdown)
   -   _THIS_PAGE_IS_UNDER_CONSTRUCTION_
   -   **Stock Market Analysis and Prediction**: Leveraging **Python's data science libraries** to analyze historical stock data and predict future prices.  
 
